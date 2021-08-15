@@ -1,1 +1,53 @@
-<p>navbar works!</p>
+<div class="custom-navbar">
+    <div class="name-flex">
+        <div class="name-row-left">
+            <div class="top-mar text">
+                Ask
+            </div>
+        </div>
+        <div class="name-row-right">
+            <div class="top-mar">
+                <span class="text">Namer</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a class="logo-container" [routerLink]="['']">
+    <img class="logo" src="https://i.pinimg.com/originals/54/6a/0e/546a0e66aa0a28beba6abe8b52da9c04.jpg" alt="">
+</a>
+
+<div *ngIf="!showNavscreen" class="nav-open-container">
+    <button class="nav-screen-tog-fix" (click)="toggleNavScreen()">
+        <img id="nav-toggle" class="nav-toggle" src="https://static.thenounproject.com/png/345384-200.png" alt="">
+        <!-- <div *ngIf="showNavscreen" class="cross-sign h1">X</div> -->
+    </button>
+</div>
+
+
+<div *ngIf="showNavscreen" class="nav-close-container">
+    <button class="nav-screen-tog-fix" (click)="toggleNavScreen()">
+        <div class="cross-sign h1">X</div>
+    </button>
+</div>
+
+<!-- *ngIf="showNavscreen" -->
+<div class="navscreen">
+
+    <!-- <h4 class="nav-row text">
+        <a class="custom-link" [routerLink]="['names']">Names</a>
+    </h4> -->
+
+    <h4 class="nav-row text">
+        <a class="custom-link" [routerLink]="['ask-void']">Ask Void</a>
+    </h4>
+
+    <h4 class="nav-row text">
+        <a class="custom-link" [routerLink]="['about-me']">About Me</a>
+    </h4>
+
+    <h4 class="nav-row text">
+        <a class="custom-link" [routerLink]="['contact']">Contact</a>
+    </h4>
+
+</div>

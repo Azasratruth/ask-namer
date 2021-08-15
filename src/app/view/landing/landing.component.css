@@ -1,0 +1,228 @@
+/* Name Heading */
+
+.flex-1 {
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.name-img-cont {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.name-img-border {
+  margin-top: 20px;
+}
+
+.name-img {
+  width: 319px;
+  height: 310px;
+
+  background-image: url('/assets/images/steven-ramon-ODbOdeQVF2Q-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.name-text {
+  position: absolute;
+  margin-top: -188px;
+  margin-left: 158px;
+  font-size: 1.3rem;
+
+  text-shadow:
+    0 0 6px white,
+    2px 2px 6px white,
+    -2px -2px 6px white;
+}
+
+/* Name Heading End */
+
+
+
+/* Premium */
+.premium {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+
+  /* 4 6 8 */
+  /* background-color: rgba(16, 24, 32, 0.8); */
+  /* background-color: rgba(245, 250, 255, 0.9); */
+  background-color: rgba(245, 250, 255, 0.4);
+  color: var(--always-moving-block-black);
+  padding: 1.8rem 0;
+}
+
+.prem-title {
+  font-weight: 600;
+}
+
+.prem-cont {
+  margin: 0 1rem;
+}
+
+/* Premium End */
+
+
+
+/* Portfolio */
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(16, 24, 32, 0.8);
+  /* background-color: rgba(12, 18, 24, 0.8); */
+  /* background-color: rgba(255, 255, 0, 0.8); */
+  /* background-color: rgba(12, 12, 15, 0.1); */
+  padding: 1.8rem 0;
+}
+
+/* CSS FLIP */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 17rem;
+  height: 16rem;
+  margin: 2.5rem;
+
+  border-radius: 100px 0 100px 0;
+
+  /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  border: 2px solid var(--always-moving-block-black);
+  border-radius: inherit;
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  border-radius: inherit;
+  z-index: 1;
+}
+
+/* Style the back side */
+.flip-card-back {
+  border-radius: 0 100px 0 100px;
+  transform: rotateY(180deg);
+  z-index: 3;
+}
+
+.flip-title,
+.flip-quality {
+  margin: 15px;
+}
+
+.flip-subtitle,
+.flip-body {
+  margin: 5px 15px;
+}
+
+.flip-title {
+  font-size: 1.85rem;
+}
+
+.flip-quality {
+  font-size: 1.3rem;
+}
+
+.flip-subtitle {
+  font-size: 1.4rem;
+}
+
+.flip-body {
+  font-size: 1.25rem;
+}
+
+/* Z-Index to hide the hr when flipped */
+.flip-hr-front,
+.flip-hr-back {
+  width: 80%;
+  color: #000;
+  border-width: 4px;
+  z-index: 2;
+}
+
+/* FLIP End */
+
+/* Portfolio End */
+
+
+/* For good phone screens */
+@media (min-width: 450px) {
+  .name-img {
+    width: 414px;
+    height: 426px;
+    font-size: 1.3rem;
+  }
+
+  .name-text {
+    margin-top: -265px;
+    margin-left: 204px;
+    font-size: 1.7rem;
+  }
+}
+
+/* For large screens */
+@media (min-width: 768px) {
+  .name-img {
+    width: 691px;
+    height: 711px;
+  }
+
+  .name-text {
+    margin-top: -442px;
+    margin-left: 346px;
+    font-size: 2.5rem;
+  }
+}

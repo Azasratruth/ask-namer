@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --less-fake-white: rgb(250, 250, 250, 0.7);
+  --fake-white: rgb(250, 250, 250, 0.6);
+
+  --lux-black: rgb(34, 34, 34);
+  --block-black: rgb(12, 12, 12);
+  --moving-block-black: rgb(7, 7, 7);
+  /* --always-moving-block-black: rgba(12, 12, 12, 0.9); */
+  --always-moving-block-black: rgba(12, 12, 15, 0.9);
+  /* Eigengrau */
+  /* --always-moving-block-black: rgba(22, 22, 29, 0.9); */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.view {
+  position: relative;
+  min-height: calc(100vh - 172px);
+}
+
+.text,
+.text-light,
+.text-dark {
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 3px;
+  /* font-variant: small-caps; */
+}
+
+.text {
+  /* Text color difference */
+  color: white;
+  mix-blend-mode: difference;
+
+  /* filter: invert(1) contrast(1);
+        -webkit-filter: invert(1) contrast(1); */
+}
+
+/* For flipping cards */
+.text-light {
+  color: white;
+}
+
+/* For lighter bgs */
+.text-dark {
+  color: #212529;
+}
+
+.custom-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.gap {
+  display: flex;
+  margin: 2rem;
+}
