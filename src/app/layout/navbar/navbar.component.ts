@@ -6,6 +6,7 @@ import { gsap } from 'gsap';
     templateUrl: './navbar.component.html',
     styleUrls: ['./navbar.component.css'],
 })
+
 export class NavbarComponent implements OnInit {
     public showNavscreen: boolean = false;
 
@@ -17,8 +18,14 @@ export class NavbarComponent implements OnInit {
 
 
     public openingAnimation() {
+
         gsap.set('.navscreen', {
             x: '-100vw'
+        });
+
+        gsap.set('.nav-close-container', {
+            x: '5rem',
+            opacity: 0
         });
 
         var tl = gsap.timeline();
@@ -79,12 +86,25 @@ export class NavbarComponent implements OnInit {
             });
 
             // Screen
-            navsc.to('.navscreen', {
-                x: 0,
-                opacity: 1,
-                ease: 'SlowMo.in',
-                duration: 0.4
-            }, '+=0.4');
+            navsc
+                .to('.nav-open-container', {
+                    x: '5rem',
+                    opacity: 0,
+                    ease: 'SlowMo.out',
+                    duration: 0.8
+                })
+                .to('.nav-close-container', {
+                    x: 0,
+                    opacity: 1,
+                    ease: 'SlowMo.in',
+                    duration: 0.8
+                }, '-=0.2')
+                .to('.navscreen', {
+                    x: 0,
+                    opacity: 1,
+                    ease: 'SlowMo.in',
+                    duration: 0.4
+                }, '+=0.4');
 
             // Each row comes in
             navsc.to('.nav-row', {
@@ -115,13 +135,28 @@ export class NavbarComponent implements OnInit {
                 overflowY: 'auto'
             });
 
-            // Background change
-            navsc.to('.nav-row', {
-                padding: 0,
-                backgroundColor: 'transparent',
-                color: 'white',
-                duration: 0.4,
-            });
+            navsc
+                // move nav close out
+                .to('.nav-close-container', {
+                    x: '5rem',
+                    opacity: 0,
+                    ease: 'SlowMo.out',
+                    duration: 0.8
+                })
+                // move nav open in
+                .to('.nav-open-container', {
+                    x: 0,
+                    opacity: 1,
+                    ease: 'SlowMo.in',
+                    duration: 0.8
+                }, '-=0.2')
+                // Background change
+                .to('.nav-row', {
+                    padding: 0,
+                    backgroundColor: 'transparent',
+                    color: 'white',
+                    duration: 0.4,
+                });
 
             // Each row goes out
             navsc.to('.nav-row', {
@@ -141,32 +176,5 @@ export class NavbarComponent implements OnInit {
             });
 
         }
-
-        // if (this.showNavscreen) this.disableScrolling();
-        // else this.enableScrolling();
     }
-
-    // disableScrolling() {
-    //     var x = window.scrollX;
-    //     var y = window.scrollY;
-    //     window.onscroll = function () {
-    //         window.scrollTo(x, y);
-    //     };
-    // }
-
-    // enableScrolling() {
-    //     window.onscroll = function () { };
-    // }
-
-    //   toggle() {
-    //     this.show = !this.show;
-    //     console.log(this.show);
-    // CHANGE THE NAME OF THE BUTTON.
-    // if(this.show)  {
-    // this.buttonName = "Hide";
-    // console.log("hide");
-    // }
-    // else
-    //   this.buttonName = "Show";
-    //   }
 }

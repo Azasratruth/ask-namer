@@ -13,25 +13,30 @@
     </div>
 </div>
 
+
 <a class="logo-container" [routerLink]="['']">
     <img class="logo" src="https://i.pinimg.com/originals/54/6a/0e/546a0e66aa0a28beba6abe8b52da9c04.jpg" alt="">
 </a>
 
-<div *ngIf="!showNavscreen" class="nav-open-container">
-    <button class="nav-screen-tog-fix" (click)="toggleNavScreen()">
-        <img id="nav-toggle" class="nav-toggle" src="https://static.thenounproject.com/png/345384-200.png" alt="">
-        <!-- <div *ngIf="showNavscreen" class="cross-sign h1">X</div> -->
-    </button>
+<div class="nav-open-container">
+    <div class="nav-screen-tog" (click)="toggleNavScreen()">
+        <div class="nav-burg">
+            <div class="nav-burg-l">______</div>
+            <div class="nav-burg-l">______</div>
+            <div class="nav-burg-l">______</div>
+        </div>
+    </div>
 </div>
 
 
-<div *ngIf="showNavscreen" class="nav-close-container">
-    <button class="nav-screen-tog-fix" (click)="toggleNavScreen()">
-        <div class="cross-sign h1">X</div>
-    </button>
+<div class="nav-close-container">
+    <div class="nav-screen-tog" (click)="toggleNavScreen()">
+        <div class="nav-sc-cross">
+            &times;
+        </div>
+    </div>
 </div>
 
-<!-- *ngIf="showNavscreen" -->
 <div class="navscreen">
 
     <!-- <h4 class="nav-row text">

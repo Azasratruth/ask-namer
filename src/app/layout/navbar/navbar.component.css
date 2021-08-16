@@ -75,10 +75,12 @@
 /* Nav Toggle */
 .nav-open-container,
 .nav-close-container {
-  /* position: absolute; */
   position: fixed;
   top: 0.8rem;
   right: 1rem;
+
+  width: 3.25rem;
+  height: 2.7rem;
 }
 
 .nav-open-container {
@@ -114,16 +116,59 @@
 /* Nav Screen Ends */
 
 
-.nav-screen-tog-fix {
-  position: relative;
+.nav-screen-tog {
+  position: inherit;
+  height: inherit;
+  width: inherit;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
+
+.nav-burg {
+  height: inherit;
+  width: 2.5rem;
+
+  margin-left: 5px;
+  margin-top: -11px;
+
+  line-height: 1;
+  font-size: 1rem;
+  color: white;
+
+  text-shadow:
+    0 0 20px white,
+    0 0 2px white,
+    0 0 3px white;
+}
+
+.nav-burg-l {
+  margin-bottom: -2px;
+}
+
+.nav-sc-cross {
+  /* position: relative; */
+  margin-top: 19px;
+  margin-left: 9px;
+  line-height: 0;
+
+  font-family: 'Nunito';
+  font-size: 3.3rem;
+  color: white;
+
+  text-shadow:
+    0 0 20px white,
+    0 0 4px white,
+    0 0 4px white;
+}
+
 
 /* For good phone screens */
 @media (min-width: 450px) {
 
   .nav-open-container,
   .nav-close-container {
-    /* top: 0; */
     right: 1.5rem;
   }
 
@@ -133,7 +178,6 @@
   }
 
   .logo-container {
-    /* top: 0; */
     left: 1.5rem;
   }
 

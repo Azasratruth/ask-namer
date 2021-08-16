@@ -32,7 +32,7 @@ const appRoutes: Routes = [
         ContactComponent,
         PageAnimationComponent,
         AskVoidComponent,
-        TermsAndAgreementComponent
+        TermsAndAgreementComponent,
     ],
     imports: [
         BrowserModule,
