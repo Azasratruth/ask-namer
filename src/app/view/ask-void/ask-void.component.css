@@ -1,0 +1,10 @@
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--always-moving-block-black);
+}
+
+.title {
+  letter-spacing: 10px;
+}
