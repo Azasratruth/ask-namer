@@ -12,6 +12,7 @@ import { ContactComponent } from './view/contact/contact.component';
 import { PageAnimationComponent } from './feature/page-animation/page-animation.component';
 import { AskVoidComponent } from './view/ask-void/ask-void.component';
 import { TermsAndAgreementComponent } from './view/terms-and-agreement/terms-and-agreement.component';
+import { NomenclatureComponent } from './view/nomenclature/nomenclature.component';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
         PageAnimationComponent,
         AskVoidComponent,
         TermsAndAgreementComponent,
+        NomenclatureComponent,
     ],
     imports: [
         BrowserModule,

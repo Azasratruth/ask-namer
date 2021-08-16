@@ -63,7 +63,7 @@ export class NavbarComponent implements OnInit {
 
 
     toggleNavScreen() {
-        console.log(this.showNavscreen);
+        // console.log(this.showNavscreen);
         this.showNavscreen = !this.showNavscreen;
 
         var navsc = gsap.timeline();
@@ -115,8 +115,8 @@ export class NavbarComponent implements OnInit {
                 duration: 0.4,
             }, '+=0.4');
 
-            // Background Change
-            navsc.to('.nav-row', {
+            // Background Change, made by chance. Delete custom link from below to remove the extra padding
+            navsc.to('.custom-link, .nav-row', {
                 paddingTop: 8,
                 paddingBottom: 8,
                 paddingLeft: 35,
@@ -151,7 +151,7 @@ export class NavbarComponent implements OnInit {
                     duration: 0.8
                 }, '-=0.2')
                 // Background change
-                .to('.nav-row', {
+                .to('.custom-link, .nav-row', {
                     padding: 0,
                     backgroundColor: 'transparent',
                     color: 'white',
