@@ -40,20 +40,25 @@
 
 <div class="navscreen">
 
-    <!-- <h4 class="nav-row text">
+    <!-- <h4 class="nav-row text" (click)="toggleNavScreen()">
         <a class="custom-link" [routerLink]="['names']">Names</a>
     </h4> -->
 
     <h4 class="nav-row text">
-        <a class="custom-link" [routerLink]="['ask-void']" (click)="toggleNavScreen()">Ask Void</a>
+        <a class="custom-link nav-custom-link" [routerLink]="['nomenclature']"
+            (click)="toggleNavScreen()">Nomenclature</a>
     </h4>
 
     <h4 class="nav-row text">
-        <a class="custom-link" [routerLink]="['about-me']" (click)="toggleNavScreen()">About Me</a>
+        <a class="custom-link nav-custom-link" [routerLink]="['ask-void']" (click)="toggleNavScreen()">Ask Void</a>
     </h4>
 
     <h4 class="nav-row text">
-        <a class="custom-link" [routerLink]="['contact']" (click)="toggleNavScreen()">Contact</a>
+        <a class="custom-link nav-custom-link" [routerLink]="['about-me']" (click)="toggleNavScreen()">About Me</a>
+    </h4>
+
+    <h4 class="nav-row text">
+        <a class="custom-link nav-custom-link" [routerLink]="['contact']" (click)="toggleNavScreen()">Contact</a>
     </h4>
 
 </div>

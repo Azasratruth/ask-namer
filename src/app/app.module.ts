@@ -19,6 +19,7 @@ const appRoutes: Routes = [
     { path: 'about-me', component: AboutMeComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'ask-void', component: AskVoidComponent },
+    { path: 'nomenclature', component: NomenclatureComponent },
     { path: 'terms-and-agreement', component: TermsAndAgreementComponent }
 ];
 
