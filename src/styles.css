@@ -63,3 +63,27 @@ body {
   display: flex;
   margin: 2rem;
 }
+
+
+
+/* Try */
+/* .f-page { */
+/* position: absolute; */
+/* background-color: var(--always-moving-block-black); */
+/* background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+
+
+/* background: rgba(248, 212, 83, 1.0);
+  background: -webkit-linear-gradient(right, rgba(248, 212, 83, 1.0), rgba(255, 93, 91, 1.0));
+  background: -moz-linear-gradient(right, rgba(248, 212, 83, 1.0), rgba(255, 93, 91, 1.0));
+  background: linear-gradient(to left, rgba(248, 212, 83, 1.0), rgba(255, 93, 91, 1.0)); */
+/* background: linear-gradient(to right, rgba(12, 12, 15, 0.9), rgba(255, 255, 255, 1)); */
+/* background: linear-gradient(to left, rgba(12, 12, 15, 0.9), rgba(12, 12, 15, 0.9) 50%, #eee 75%); */
+
+/* background: -webkit-linear-gradient(right, rgba(248, 212, 83, 1.0), rgba(255, 93, 91, 1.0));
+  background: -moz-linear-gradient(right, rgba(248, 212, 83, 1.0), rgba(255, 93, 91, 1.0));
+  background: linear-gradient(to right, rgba(12, 12, 15, 0.9) 50%, #fff 50%); */
+/* } */
+
+
+/* Try end */
