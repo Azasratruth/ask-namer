@@ -6,7 +6,6 @@
   --lux-black: rgb(34, 34, 34);
   --block-black: rgb(12, 12, 12);
   --moving-block-black: rgb(7, 7, 7);
-  /* --always-moving-block-black: rgba(12, 12, 12, 0.9); */
   --always-moving-block-black: rgba(12, 12, 15, 0.9);
   /* Eigengrau */
   /* --always-moving-block-black: rgba(22, 22, 29, 0.9); */
@@ -49,15 +48,26 @@ body {
   color: #212529;
 }
 
-.custom-link {
-  color: inherit;
-  text-decoration: none;
-}
-
+/* Links */
+.custom-link,
 .custom-link:hover {
   color: inherit;
   text-decoration: none;
 }
+
+.custom-link-no-color {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.custom-link-no-color:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+/* Links End */
 
 .gap {
   display: flex;
@@ -65,25 +75,27 @@ body {
 }
 
 
+/* Generic Container */
+.generic-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--always-moving-block-black);
+}
 
-/* Try */
-/* .f-page { */
-/* position: absolute; */
-/* background-color: var(--always-moving-block-black); */
-/* background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+.gen-title {
+  margin: 4rem;
+}
 
+.gen-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-/* background: rgba(248, 212, 83, 1.0);
-  background: -webkit-linear-gradient(right, rgba(248, 212, 83, 1.0), rgba(255, 93, 91, 1.0));
-  background: -moz-linear-gradient(right, rgba(248, 212, 83, 1.0), rgba(255, 93, 91, 1.0));
-  background: linear-gradient(to left, rgba(248, 212, 83, 1.0), rgba(255, 93, 91, 1.0)); */
-/* background: linear-gradient(to right, rgba(12, 12, 15, 0.9), rgba(255, 255, 255, 1)); */
-/* background: linear-gradient(to left, rgba(12, 12, 15, 0.9), rgba(12, 12, 15, 0.9) 50%, #eee 75%); */
+  margin: 20px;
 
-/* background: -webkit-linear-gradient(right, rgba(248, 212, 83, 1.0), rgba(255, 93, 91, 1.0));
-  background: -moz-linear-gradient(right, rgba(248, 212, 83, 1.0), rgba(255, 93, 91, 1.0));
-  background: linear-gradient(to right, rgba(12, 12, 15, 0.9) 50%, #fff 50%); */
-/* } */
+  text-align: center;
+  letter-spacing: 5px;
+}
 
-
-/* Try end */
+/* Generic Container End */

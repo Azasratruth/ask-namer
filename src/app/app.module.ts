@@ -13,6 +13,7 @@ import { PageAnimationComponent } from './feature/page-animation/page-animation.
 import { AskVoidComponent } from './view/ask-void/ask-void.component';
 import { TermsAndAgreementComponent } from './view/terms-and-agreement/terms-and-agreement.component';
 import { NomenclatureComponent } from './view/nomenclature/nomenclature.component';
+import { NamesComponent } from './view/names/names.component';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
@@ -36,6 +37,7 @@ const appRoutes: Routes = [
         AskVoidComponent,
         TermsAndAgreementComponent,
         NomenclatureComponent,
+        NamesComponent,
     ],
     imports: [
         BrowserModule,
