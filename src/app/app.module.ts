@@ -14,13 +14,19 @@ import { AskVoidComponent } from './view/ask-void/ask-void.component';
 import { TermsAndAgreementComponent } from './view/terms-and-agreement/terms-and-agreement.component';
 import { NomenclatureComponent } from './view/nomenclature/nomenclature.component';
 import { NamesComponent } from './view/names/names.component';
+import { HaecceityComponent } from './view/haecceity/haecceity.component';
+import { NomenclatureLandingComponent } from './view/nomenclature-landing/nomenclature-landing.component';
+import { HaecceityLandingComponent } from './view/haecceity-landing/haecceity-landing.component';
+import { NamesLandingComponent } from './view/names-landing/names-landing.component';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
     { path: 'about-me', component: AboutMeComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'ask-void', component: AskVoidComponent },
+    { path: 'names', component: NamesComponent },
     { path: 'nomenclature', component: NomenclatureComponent },
+    { path: 'haecceity', component: HaecceityComponent },
     { path: 'terms-and-agreement', component: TermsAndAgreementComponent }
 ];
 
@@ -38,6 +44,10 @@ const appRoutes: Routes = [
         TermsAndAgreementComponent,
         NomenclatureComponent,
         NamesComponent,
+        HaecceityComponent,
+        NomenclatureLandingComponent,
+        HaecceityLandingComponent,
+        NamesLandingComponent,
     ],
     imports: [
         BrowserModule,

@@ -69,11 +69,19 @@ body {
 
 /* Links End */
 
+.under-line {
+  border-bottom: 1px solid white;
+}
+
 .gap {
   display: flex;
   margin: 2rem;
 }
 
+.gap-block {
+  display: inline-block;
+  padding: 2rem;
+}
 
 /* Generic Container */
 .generic-cont {
@@ -83,8 +91,14 @@ body {
   background-color: var(--always-moving-block-black);
 }
 
-.gen-title {
-  margin: 4rem;
+.gen-title-margin {
+  margin: 0 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.gen-subtitle {
+  margin: 0 2rem;
 }
 
 .gen-body {
@@ -92,10 +106,28 @@ body {
   flex-direction: column;
   align-items: center;
 
-  margin: 20px;
+  margin: 1.7rem;
 
   text-align: center;
   letter-spacing: 5px;
 }
 
 /* Generic Container End */
+
+
+@media (min-width: 450px) {
+  .gen-title-margin {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+/* For large screens */
+@media (min-width: 768px) {
+
+  .gen-title-margin,
+  .gen-body {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+}

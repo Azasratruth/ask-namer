@@ -1,1 +1,36 @@
+.name-img-cont {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
 
+.name-img {
+  width: 319px;
+  height: 310px;
+
+  background-image: url('/assets/images/Plato-Socrates-Apology-on-justice-quotepic-compressed.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.generic-cont {
+  margin-top: -5rem;
+}
+
+/* For good phone screens */
+@media (min-width: 450px) {
+  .name-img {
+    width: 414px;
+    height: 426px;
+    font-size: 1.3rem;
+  }
+
+}
+
+/* For large screens */
+@media (min-width: 768px) {
+  .name-img {
+    width: 691px;
+    height: 711px;
+  }
+}

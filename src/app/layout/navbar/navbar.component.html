@@ -40,13 +40,17 @@
 
 <div class="navscreen">
 
-    <!-- <h4 class="nav-row text" (click)="toggleNavScreen()">
-        <a class="custom-link" [routerLink]="['names']">Names</a>
-    </h4> -->
+    <h4 class="nav-row text">
+        <a class="custom-link nav-custom-link" [routerLink]="['names']" (click)="toggleNavScreen()">Names</a>
+    </h4>
 
     <h4 class="nav-row text">
         <a class="custom-link nav-custom-link" [routerLink]="['nomenclature']"
             (click)="toggleNavScreen()">Nomenclature</a>
+    </h4>
+
+    <h4 class="nav-row text">
+        <a class="custom-link nav-custom-link" [routerLink]="['haecceity']" (click)="toggleNavScreen()">Haecceity</a>
     </h4>
 
     <h4 class="nav-row text">

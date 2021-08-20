@@ -1,25 +1,38 @@
-.portfolio-cont {
-  /* background-color: rgba(12, 18, 24, 0.8); */
-  /* background-color: rgba(255, 255, 0, 0.8); */
-  /* background-color: rgba(12, 12, 15, 0.1); */
+.names-cont {
   background-color: rgba(16, 24, 32, 0.8);
 }
 
-.port-head,
-.port-body {
+.names-head,
+.names-body {
   display: flex;
-  justify-content: center;
 
+  justify-content: center;
+  align-items: center;
 }
 
-.port-body {
+.names-head {
+  flex-direction: column;
+}
+
+.names-body {
   flex-direction: row;
   flex-wrap: wrap;
 
   align-content: space-around;
-  align-items: center;
 }
 
+.title {
+  font-size: 2.6rem;
+  margin: 15px 0;
+}
+
+.subtitle {
+  font-size: 2.2rem;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
 
 /* CSS FLIP */
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */

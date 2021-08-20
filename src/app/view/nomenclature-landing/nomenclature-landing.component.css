@@ -1,7 +1,4 @@
 .portfolio-cont {
-  /* background-color: rgba(12, 18, 24, 0.8); */
-  /* background-color: rgba(255, 255, 0, 0.8); */
-  /* background-color: rgba(12, 12, 15, 0.1); */
   background-color: rgba(16, 24, 32, 0.8);
 }
 
@@ -125,3 +122,12 @@
 }
 
 /* FLIP End */
+
+
+/* Extra */
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+/* Extra End*/

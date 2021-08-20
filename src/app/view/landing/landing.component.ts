@@ -37,8 +37,6 @@ export class LandingComponent implements OnInit {
 
         gsap.to(window, { duration: 0, scrollTo: 0 });
 
-
-
         var tl = gsap.timeline();
 
         tl.from('.name-img-border', {
@@ -47,7 +45,7 @@ export class LandingComponent implements OnInit {
             duration: 2.5,
             opacity: 0,
             ease: "expo.out"
-        }, '+=3.5');
+        }, '+=1.0');
 
         tl.from('.name-text', {
             scrollTrigger: '.name-text',
