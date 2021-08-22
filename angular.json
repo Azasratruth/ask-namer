@@ -93,7 +93,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/CNAME"
+              "src/CNAME",
+              "sitemap.xml"
             ],
             "styles": [
               "src/styles.css"
