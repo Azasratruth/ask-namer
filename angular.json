@@ -25,7 +25,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/CNAME"
+              "src/CNAME",
+              "src/sitemap.xml"
             ],
             "styles": [
               "src/styles.css"
@@ -94,7 +95,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/CNAME",
-              "sitemap.xml"
+              "src/sitemap.xml"
             ],
             "styles": [
               "src/styles.css"
