@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 import { GsapService } from 'src/app/service/gsap.service';
 
 import { gsap } from 'gsap';
@@ -14,10 +15,20 @@ import { SlowMo } from "gsap/EasePack";
 
 export class LandingComponent implements OnInit {
 
-    constructor(private gsapService: GsapService) { }
+    constructor(
+        private titleService: Title,
+        private metaTagService: Meta,
+        private gsapService: GsapService
+    ) { }
 
 
     ngOnInit(): void {
+
+        this.titleService.setTitle('Ask Namer | Naming Agency | Haecceity');
+        this.metaTagService.updateTag(
+            { name: 'description', content: '' }
+        );
+
         gsap.registerPlugin(ScrollToPlugin);
         gsap.registerPlugin(ScrollTrigger);
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
+
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -10,9 +12,18 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 })
 export class AboutMeComponent implements OnInit {
 
-    constructor() { }
+    constructor(
+        private titleService: Title,
+        private metaTagService: Meta,
+    ) { }
 
     ngOnInit(): void {
+
+        this.titleService.setTitle('About | Ask Namer');
+        this.metaTagService.updateTag(
+            { name: 'description', content: '' }
+        );
+
         gsap.registerPlugin(ScrollToPlugin);
         gsap.registerPlugin(ScrollTrigger);
 
