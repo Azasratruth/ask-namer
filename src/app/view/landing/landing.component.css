@@ -1,3 +1,13 @@
+.revamp {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: var(--always-moving-block-black);
+}
+
 /* Name Heading */
 
 .flex-1 {

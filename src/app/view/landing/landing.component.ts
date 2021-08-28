@@ -50,9 +50,9 @@ export class LandingComponent implements OnInit {
 
         var tl = gsap.timeline();
 
-        tl.from('.name-img-border', {
+        tl.from('.name-img-border, .revamp', {
             scrollTrigger: '.name-img-border',
-            y: -100,
+            y: -50,
             duration: 2.5,
             opacity: 0,
             ease: "expo.out"
