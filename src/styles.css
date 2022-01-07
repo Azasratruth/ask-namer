@@ -83,6 +83,20 @@ body {
   padding: 2rem;
 }
 
+.an-title {
+  font-size: 2.5rem;
+}
+
+.desc {
+  font-size: 1.8rem;
+}
+
+/* actual-to-seo */
+.p-to-h1 {
+  font-size: 1rem;
+}
+
+
 /* Generic Container */
 .generic-cont {
   display: flex;

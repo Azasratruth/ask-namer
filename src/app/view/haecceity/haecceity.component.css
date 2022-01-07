@@ -4,5 +4,8 @@
 
 .head {
   letter-spacing: 5px;
-  /* font-family: 'Montserrat', sans-serif; */
+}
+
+.body-shortened {
+  font-size: 1rem;
 }

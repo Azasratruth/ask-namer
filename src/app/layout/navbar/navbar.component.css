@@ -27,7 +27,8 @@
 
 
 .name-row-left {
-  background-color: rgba(12, 12, 15, 0.1);
+  /* background-color: rgba(12, 12, 15, 0.1); */
+  background-color: rgba(26, 26, 26, 0.1);
 
   padding-left: 100%;
   padding-right: 5px;
@@ -47,6 +48,15 @@
 /* Can't have this top margin on parents cause of padding is used to color the nav */
 .top-mar {
   margin-top: 0.4rem;
+}
+
+.name-row-left .text {
+  margin-top: 0.5rem;
+}
+
+.name-row-left .text,
+.name-row-right .text {
+  letter-spacing: 5px;
 }
 
 
@@ -150,7 +160,10 @@
   margin-left: 9px;
   line-height: 0;
 
-  font-family: 'Nunito';
+  /* font-family: 'Nunito'; */
+  font-family: 'futura-pt', 'sans-serif';
+  font-style: normal;
+  font-weight: 300;
   font-size: 3.3rem;
   color: white;
 
