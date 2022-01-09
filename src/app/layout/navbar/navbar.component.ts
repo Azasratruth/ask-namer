@@ -8,7 +8,7 @@ import { gsap } from 'gsap';
 })
 
 export class NavbarComponent implements OnInit {
-    public showNavscreen: boolean = false;
+    public currentStatus: boolean = false;
     public toDo: boolean = false;
 
     constructor() { }
@@ -62,17 +62,17 @@ export class NavbarComponent implements OnInit {
 
     }
 
-
     toggleNavScreen(to_Do) {
-        // console.log(this.showNavscreen);
-        this.showNavscreen = !this.showNavscreen;
+        // console.log(this.currentStatus);
 
         var navsc = gsap.timeline();
 
         if (to_Do === 'open') {
 
-            if (this.showNavscreen) {
+            if (!this.currentStatus) {
                 // open
+
+                this.currentStatus = !this.currentStatus;
 
                 navsc.set('.navscreen', {
                     opacity: 0,
@@ -134,8 +134,10 @@ export class NavbarComponent implements OnInit {
         }
         if (to_Do === 'close') {
 
-            if (!this.showNavscreen) {
+            if (this.currentStatus) {
                 // close
+
+                this.currentStatus = !this.currentStatus;
 
                 navsc.set('body', {
                     overflowY: 'auto'
