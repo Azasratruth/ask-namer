@@ -1,0 +1,48 @@
+slide img {
+  width: 680px;
+  height: 1020px;
+}
+
+.hidden-cont {
+  height: 0;
+  overflow: hidden;
+}
+
+.show {
+  overflow: visible;
+  height: auto;
+}
+
+.restricted-display {
+  display: inline;
+  cursor: pointer;
+}
+
+@media (min-width: 350px) {
+
+  /* size/2 */
+  slide img {
+    width: 340px;
+    height: 510px;
+  }
+}
+
+
+@media (min-width: 450px) {
+
+  /* size/1.7 */
+  slide img {
+    width: 400px;
+    height: 600px;
+  }
+}
+
+/* For large screens */
+@media (min-width: 768px) {
+
+  slide img {
+    /* display: block; */
+    width: 340px;
+    height: 510px;
+  }
+}
