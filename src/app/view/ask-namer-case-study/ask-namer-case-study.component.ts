@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-ask-namer-case-study',
@@ -9,9 +10,17 @@ export class AskNamerCaseStudyComponent implements OnInit {
 
     show = false;
 
-    constructor() { }
+    constructor(
+        private titleService: Title,
+        private metaTagService: Meta,
+    ) { }
 
     ngOnInit(): void {
+        this.titleService.setTitle('About Me | Ask Namer');
+        this.metaTagService.updateTag(
+            { name: 'description', content: '' }
+        );
+
     }
 
 }

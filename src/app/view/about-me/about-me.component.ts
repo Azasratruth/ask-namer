@@ -19,7 +19,7 @@ export class AboutMeComponent implements OnInit {
 
     ngOnInit(): void {
 
-        this.titleService.setTitle('About | Ask Namer');
+        this.titleService.setTitle('About Me | Ask Namer');
         this.metaTagService.updateTag(
             { name: 'description', content: '' }
         );
