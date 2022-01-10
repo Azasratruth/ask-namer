@@ -21,6 +21,7 @@ import { NomenclatureLandingComponent } from './view/nomenclature-landing/nomenc
 import { HaecceityLandingComponent } from './view/haecceity-landing/haecceity-landing.component';
 import { NamesLandingComponent } from './view/names-landing/names-landing.component';
 import { AskNamerCaseStudyComponent } from './view/ask-namer-case-study/ask-namer-case-study.component';
+import { AskNamerCaseStudyLandingComponent } from './view/ask-namer-case-study-landing/ask-namer-case-study-landing.component';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
@@ -52,6 +53,7 @@ const appRoutes: Routes = [
         HaecceityLandingComponent,
         NamesLandingComponent,
         AskNamerCaseStudyComponent,
+        AskNamerCaseStudyLandingComponent,
     ],
     imports: [
         BrowserModule,

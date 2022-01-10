@@ -16,7 +16,7 @@ export class AskNamerCaseStudyComponent implements OnInit {
     ) { }
 
     ngOnInit(): void {
-        this.titleService.setTitle('About Me | Ask Namer');
+        this.titleService.setTitle('Case Study - Ask Namer | Ask Namer');
         this.metaTagService.updateTag(
             { name: 'description', content: '' }
         );
