@@ -41,7 +41,6 @@ slide img {
 @media (min-width: 768px) {
 
   slide img {
-    /* display: block; */
     width: 340px;
     height: 510px;
   }
