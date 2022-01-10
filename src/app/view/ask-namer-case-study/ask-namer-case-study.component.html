@@ -1,1 +1,98 @@
-<p>ask-namer-case-study works!</p>
+<app-page-animation></app-page-animation>
+
+<div class="gap"></div>
+
+<div class="generic-cont">
+
+    <div class="gen-title-margin text-center">
+        <h2 class="gen-title text">Ask Namer - Case Study</h2>
+        <h4 class="body-shortened text">
+            Why are brand names important? <br>
+            What value can they provide to a brand? <br><br>
+            These are all valid questions but let's start with a simpler one.
+            <br><br>
+        </h4>
+
+        <h4 class="body text">
+            What is a name? <br><br>
+        </h4>
+
+        <h4 class="body text">
+            <div class="hidden-cont" [class.show]="show">
+                When God created Adam, He declared him superior than all of his other creations.
+                When angels asked God why He created Adam in the first place, as he could do wrong. God commanded the
+                angels
+                to tell the names of things.
+                They couldn't because they didn't know. God then commanded Adam to tell the names of things, so Adam
+                did.
+
+                <br><br>
+                That is the abridged version of the story.
+                <br><br>
+
+                Nomenclature (the devising or choosing of names for things) is
+                the means by which human mind grasps the knowledge of things. Hence, the whole information
+                of man, in fact, consists of assigning names for things. Thus, teaching Adam the names of all things was
+                meant to impart their knowledge to him.
+                <br><br>
+            </div>
+
+            Humans have the ability to identify, recognize and label things. It is how we learn.
+            To put it simply, all nouns, verbs and adjectives are names that we have assigned.
+            <br><br>
+
+            <div class="under-line restricted-display" (click)="show = !show">{{ show ? 'Show Less': 'Click for Context'
+                }}</div>
+
+            <br><br><br><br>
+
+
+            <h4 class="body text">
+                Why are names, in the contemporary definition, important?<br>
+            </h4>
+
+            Entities are recognized by their names.<br>
+            Assuming the entity is a brand; all actions, people, work, vision, mission, and everything else related to
+            the brand is connected to its name.
+
+            <br><br>
+
+        </h4>
+    </div>
+</div>
+
+<div class="gap"></div>
+
+<!-- Breakdown -->
+<div class="generic-cont" id="app-ask-namer-case-study">
+
+    <div class="gen-title-margin text-center">
+        <h2 class="gen-title text">What's in a name?</h2>
+
+        <h4 class="body text">
+            Everything that you put in it.<br>
+        </h4>
+
+        <h4 class="body-shortened text">
+            There are different values you can generate within a name, and a name can contain more than one
+            values.<br><br>
+        </h4>
+
+        <h2 class="gen-title text">Values in Ask Namer</h2>
+    </div>
+
+    <carousel [isAnimated]="true" [noPause]="false" [interval]="5000">
+        <slide>
+            <img src="/assets/images/ask-namer-name-breakdown-1.jpg" alt="first slide">
+        </slide>
+        <slide>
+            <img src="/assets/images/ask-namer-name-breakdown-2.jpg" alt="second slide">
+        </slide>
+        <slide>
+            <img src="/assets/images/ask-namer-name-breakdown-3.jpg" alt="third slide">
+        </slide>
+    </carousel>
+
+    <div class="gap"></div>
+
+</div>

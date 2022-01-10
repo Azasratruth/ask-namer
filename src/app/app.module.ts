@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -19,12 +21,12 @@ import { NomenclatureLandingComponent } from './view/nomenclature-landing/nomenc
 import { HaecceityLandingComponent } from './view/haecceity-landing/haecceity-landing.component';
 import { NamesLandingComponent } from './view/names-landing/names-landing.component';
 import { AskNamerCaseStudyComponent } from './view/ask-namer-case-study/ask-namer-case-study.component';
+import { AskNamerCaseStudyLandingComponent } from './view/ask-namer-case-study-landing/ask-namer-case-study-landing.component';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
     { path: 'about-me', component: AboutMeComponent },
     { path: 'contact', component: ContactComponent },
-    { path: 'ask-void', component: AskVoidComponent },
     { path: 'names', component: NamesComponent },
     { path: 'nomenclature', component: NomenclatureComponent },
     { path: 'haecceity', component: HaecceityComponent },
@@ -51,11 +53,13 @@ const appRoutes: Routes = [
         HaecceityLandingComponent,
         NamesLandingComponent,
         AskNamerCaseStudyComponent,
+        AskNamerCaseStudyLandingComponent,
     ],
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
-        RouterModule.forRoot(appRoutes)
+        RouterModule.forRoot(appRoutes),
+        CarouselModule.forRoot()
     ],
     providers: [],
     bootstrap: [NavbarComponent, AppComponent, FooterComponent]

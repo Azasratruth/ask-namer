@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-ask-namer-case-study',
-  templateUrl: './ask-namer-case-study.component.html',
-  styleUrls: ['./ask-namer-case-study.component.css']
+    selector: 'app-ask-namer-case-study',
+    templateUrl: './ask-namer-case-study.component.html',
+    styleUrls: ['./ask-namer-case-study.component.css']
 })
 export class AskNamerCaseStudyComponent implements OnInit {
 
-  constructor() { }
+    show = false;
 
-  ngOnInit(): void {
-  }
+    constructor(
+        private titleService: Title,
+        private metaTagService: Meta,
+    ) { }
+
+    ngOnInit(): void {
+        this.titleService.setTitle('Case Study - Ask Namer | Ask Namer');
+        this.metaTagService.updateTag(
+            { name: 'description', content: '' }
+        );
+
+    }
 
 }

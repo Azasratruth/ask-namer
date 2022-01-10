@@ -14,12 +14,12 @@
 </div>
 
 
-<a class="logo-container" [routerLink]="['']">
+<a class="logo-container" [routerLink]="['']" (click)="toggleNavScreen('close')">
     <img class="logo" src="../../../assets/images/logo.jpg" alt="ask namer logo">
 </a>
 
 <div class="nav-open-container">
-    <div class="nav-screen-tog" (click)="toggleNavScreen()">
+    <div class="nav-screen-tog" (click)="toggleNavScreen('open')">
         <div class="nav-burg">
             <div class="nav-burg-l">______</div>
             <div class="nav-burg-l">______</div>
@@ -30,7 +30,7 @@
 
 
 <div class="nav-close-container">
-    <div class="nav-screen-tog" (click)="toggleNavScreen()">
+    <div class="nav-screen-tog" (click)="toggleNavScreen('close')">
         <div class="nav-sc-cross">
             &times;
         </div>
@@ -40,24 +40,26 @@
 <div class="navscreen">
 
     <h4 class="nav-row text">
-        <a class="custom-link nav-custom-link" [routerLink]="['names']" (click)="toggleNavScreen()">Names</a>
+        <a class="custom-link nav-custom-link" [routerLink]="['names']" (click)="toggleNavScreen('close')">Names</a>
     </h4>
 
     <h4 class="nav-row text">
         <a class="custom-link nav-custom-link" [routerLink]="['nomenclature']"
-            (click)="toggleNavScreen()">Nomenclature</a>
+            (click)="toggleNavScreen('close')">Nomenclature</a>
     </h4>
 
     <h4 class="nav-row text">
-        <a class="custom-link nav-custom-link" [routerLink]="['haecceity']" (click)="toggleNavScreen()">Haecceity</a>
+        <a class="custom-link nav-custom-link" [routerLink]="['haecceity']"
+            (click)="toggleNavScreen('close')">Haecceity</a>
     </h4>
 
     <h4 class="nav-row text">
-        <a class="custom-link nav-custom-link" [routerLink]="['about-me']" (click)="toggleNavScreen()">About Me</a>
+        <a class="custom-link nav-custom-link" [routerLink]="['about-me']" (click)="toggleNavScreen('close')">About
+            Me</a>
     </h4>
 
     <h4 class="nav-row text">
-        <a class="custom-link nav-custom-link" [routerLink]="['contact']" (click)="toggleNavScreen()">Contact</a>
+        <a class="custom-link nav-custom-link" [routerLink]="['contact']" (click)="toggleNavScreen('close')">Contact</a>
     </h4>
 
 </div>
