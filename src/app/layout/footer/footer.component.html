@@ -3,14 +3,18 @@
 <div class="custom-footer">
     <div class="flex-container">
 
-        <h4 class="flex-column text" id="about-me" (mouseenter)="linkHoverOn('#about-me')"
-            (mouseout)="linkHoverOff('#about-me')">
-            <a class="custom-link" [routerLink]="['about-me']">About Me</a>
+        <h4 class="flex-column text" id="home" (mouseenter)="linkHoverOn('#home')" (mouseout)="linkHoverOff('#home')">
+            <a class="custom-link" [routerLink]="['']">Home</a>
         </h4>
 
         <h4 class="flex-column text" id="connect" (mouseenter)="linkHoverOn('#connect')"
             (mouseout)="linkHoverOff('#connect')">
             <a class="custom-link" [routerLink]="['connect']">Connect</a>
+        </h4>
+
+        <h4 class="flex-column text" id="about-me" (mouseenter)="linkHoverOn('#about-me')"
+            (mouseout)="linkHoverOff('#about-me')">
+            <a class="custom-link" [routerLink]="['about-me']">About Me</a>
         </h4>
 
         <h4 class="flex-column text" id="terms" (mouseenter)="linkHoverOn('#terms')"
@@ -22,5 +26,5 @@
 </div>
 
 <p class="custom-footer-bottom">
-    © 2021 Ask Namer - All Rights Reserved
+    © 2022 Ask Namer - All Rights Reserved
 </p>
