@@ -26,7 +26,7 @@ import { AskNamerCaseStudyLandingComponent } from './view/ask-namer-case-study-l
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
     { path: 'about-me', component: AboutMeComponent },
-    { path: 'contact', component: ContactComponent },
+    { path: 'connect', component: ContactComponent },
     { path: 'names', component: NamesComponent },
     { path: 'nomenclature', component: NomenclatureComponent },
     { path: 'haecceity', component: HaecceityComponent },
