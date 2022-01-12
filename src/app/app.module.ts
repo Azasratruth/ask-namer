@@ -22,6 +22,7 @@ import { HaecceityLandingComponent } from './view/haecceity-landing/haecceity-la
 import { NamesLandingComponent } from './view/names-landing/names-landing.component';
 import { AskNamerCaseStudyComponent } from './view/ask-namer-case-study/ask-namer-case-study.component';
 import { AskNamerCaseStudyLandingComponent } from './view/ask-namer-case-study-landing/ask-namer-case-study-landing.component';
+import { TestimonialsComponent } from './view/testimonials/testimonials.component';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
@@ -54,6 +55,7 @@ const appRoutes: Routes = [
         NamesLandingComponent,
         AskNamerCaseStudyComponent,
         AskNamerCaseStudyLandingComponent,
+        TestimonialsComponent,
     ],
     imports: [
         BrowserModule,

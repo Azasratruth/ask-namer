@@ -124,6 +124,7 @@ body {
 .head,
 .gen-title {
   font-weight: 300;
+  font-variant: small-caps;
 }
 
 .gen-body {
@@ -141,8 +142,27 @@ body {
   font-size: 1rem;
 }
 
-
 /* Generic Container End */
+
+
+/* Testimonials */
+
+.bord {
+  padding: 1rem;
+  border-top: #f0f0f0 1px outset;
+  border-left: #f0f0f0 1px outset;
+}
+
+.sm-bord {
+  display: inline-block;
+  padding: 0.7rem;
+  border-bottom: #f0f0f0 2px inset;
+  border-right: #f0f0f0 2px inset;
+  font-variant: small-caps;
+}
+
+/* Testimonials End */
+
 
 /* For small screens */
 @media (min-width: 450px) {
