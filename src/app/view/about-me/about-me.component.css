@@ -17,6 +17,55 @@
   margin-top: -5rem;
 }
 
+/* Borders */
+
+
+.full-bord {
+  border: #f0f0f0 2px inset;
+  box-shadow: 0px 0px 5px rgba(240, 240, 240, 0.3);
+}
+
+.bord {
+  padding: 1rem;
+}
+
+.bord-l {
+  border-bottom: #f0f0f0 2px outset;
+  border-left: #f0f0f0 2px inset;
+  box-shadow: -4px 4px 5px rgba(240, 240, 240, 0.3);
+}
+
+.bord-r {
+  border-bottom: #f0f0f0 2px outset;
+  border-right: #f0f0f0 2px outset;
+  box-shadow: 4px 4px 5px rgba(240, 240, 240, 0.3);
+}
+
+
+.sm-bord {
+  display: inline-block;
+  padding: 0.7rem;
+  font-variant: small-caps;
+}
+
+.sm-bord-m {
+  display: inline-block;
+  padding: 0.7rem;
+}
+
+.sm-bord-m-l {
+  border-top: #f0f0f0 2px inset;
+  border-left: #f0f0f0 2px inset;
+  box-shadow: -4px -4px 5px rgba(240, 240, 240, 0.3);
+}
+
+.sm-bord-m-r {
+  border-top: #f0f0f0 2px inset;
+  border-right: #f0f0f0 2px outset;
+  font-variant: small-caps;
+  box-shadow: 4px -4px 5px rgba(240, 240, 240, 0.3);
+}
+
 /* For good phone screens */
 @media (min-width: 450px) {
   .name-img {
@@ -32,5 +81,25 @@
   .name-img {
     width: 691px;
     height: 711px;
+  }
+
+  .sm-bord-m-l,
+  .sm-bord-m-r {
+    border: none;
+    box-shadow: none;
+  }
+
+
+  .sm-bord-l {
+    border-top: #f0f0f0 2px inset;
+    border-left: #f0f0f0 2px inset;
+    box-shadow: -4px -4px 5px rgba(240, 240, 240, 0.3);
+  }
+
+  .sm-bord-r {
+    border-top: #f0f0f0 2px inset;
+    border-right: #f0f0f0 2px outset;
+    font-variant: small-caps;
+    box-shadow: 4px -4px 5px rgba(240, 240, 240, 0.3);
   }
 }

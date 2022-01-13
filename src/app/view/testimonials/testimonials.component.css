@@ -1,1 +1,13 @@
+.bord {
+  padding: 1rem;
+  border-top: #f0f0f0 1px outset;
+  border-left: #f0f0f0 1px outset;
+}
 
+.sm-bord {
+  display: inline-block;
+  padding: 0.7rem;
+  border-bottom: #f0f0f0 2px inset;
+  border-right: #f0f0f0 2px inset;
+  font-variant: small-caps;
+}
