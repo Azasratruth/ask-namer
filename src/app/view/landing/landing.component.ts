@@ -26,8 +26,12 @@ export class LandingComponent implements OnInit {
 
         this.titleService.setTitle('Ask Namer | Naming Agency | Haecceity');
         this.metaTagService.updateTag(
-            { name: 'description', content: '' }
+            { name: 'description', content: 'A naming agency with an intuitive approach. The identity of your brand starts with a name, so we make sure you get a headstart.' }
         );
+        this.metaTagService.updateTag(
+            { name: 'keywords', content: 'brand name, startup name, business name, naming agency, branding' }
+        );
+
 
         gsap.registerPlugin(ScrollToPlugin);
         gsap.registerPlugin(ScrollTrigger);

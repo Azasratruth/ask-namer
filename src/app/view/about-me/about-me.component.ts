@@ -21,7 +21,7 @@ export class AboutMeComponent implements OnInit {
 
         this.titleService.setTitle('About Me | Ask Namer');
         this.metaTagService.updateTag(
-            { name: 'description', content: '' }
+            { name: 'description', content: "Ask Namer is a solo endeavor. My cause is to help people, who are doing something positive, get recognized by their name. Majority of my clientele has been startups." }
         );
 
         gsap.registerPlugin(ScrollToPlugin);
@@ -53,6 +53,4 @@ export class AboutMeComponent implements OnInit {
 
 
     }
-
-
 }

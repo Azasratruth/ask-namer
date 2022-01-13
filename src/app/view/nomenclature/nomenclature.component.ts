@@ -17,7 +17,7 @@ export class NomenclatureComponent implements OnInit {
 
         this.titleService.setTitle('Nomenclature | Ask Namer');
         this.metaTagService.updateTag(
-            { name: 'description', content: '' }
+            { name: 'description', content: 'The Art & Science of Naming. Semantics, Auditory Perception, Premium Names. Domain, Registration, and Trademark Screening.' }
         );
 
     }

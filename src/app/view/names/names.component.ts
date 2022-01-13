@@ -17,7 +17,7 @@ export class NamesComponent implements OnInit {
 
         this.titleService.setTitle('Names aka Portfolio | Ask Namer');
         this.metaTagService.updateTag(
-            { name: 'description', content: '' }
+            { name: 'description', content: 'The names in my portfolio. Names ranging from startups, products, brands, magazines, and even fishes.' }
         );
 
     }
