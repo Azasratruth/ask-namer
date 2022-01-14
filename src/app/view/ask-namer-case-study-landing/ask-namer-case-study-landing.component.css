@@ -18,6 +18,25 @@ slide img {
   cursor: pointer;
 }
 
+
+@media (min-width: 150px) {
+
+  /* size/5 */
+  slide img {
+    width: 136px;
+    height: 204px;
+  }
+}
+
+@media (min-width: 250px) {
+
+  /* size/3 */
+  slide img {
+    width: 226px;
+    height: 340px;
+  }
+}
+
 @media (min-width: 350px) {
 
   /* size/2 */
@@ -26,7 +45,6 @@ slide img {
     height: 510px;
   }
 }
-
 
 @media (min-width: 450px) {
 
