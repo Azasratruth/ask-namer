@@ -16,9 +16,9 @@ export class ContactComponent implements OnInit {
     ngOnInit(): void {
 
         this.titleService.setTitle('Connect | Naming Agency | Ask Namer');
-        this.metaTagService.updateTag(
-            { name: 'description', content: 'Feel free to reach out to me regarding any queries, collaborations, or a discussion at asknamer@outlook.com.' }
-        );
+        this.metaTagService.updateTag({
+            name: 'description', content: 'Feel free to reach out to me regarding any queries, collaborations, or a discussion at asknamer@outlook.com.'
+        });
 
     }
 

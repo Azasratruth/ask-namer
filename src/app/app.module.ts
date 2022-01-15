@@ -23,6 +23,7 @@ import { NamesLandingComponent } from './view/names-landing/names-landing.compon
 import { AskNamerCaseStudyComponent } from './view/ask-namer-case-study/ask-namer-case-study.component';
 import { AskNamerCaseStudyLandingComponent } from './view/ask-namer-case-study-landing/ask-namer-case-study-landing.component';
 import { TestimonialsComponent } from './view/testimonials/testimonials.component';
+import { ContactLandingComponent } from './view/contact-landing/contact-landing.component';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
@@ -56,6 +57,7 @@ const appRoutes: Routes = [
         AskNamerCaseStudyComponent,
         AskNamerCaseStudyLandingComponent,
         TestimonialsComponent,
+        ContactLandingComponent,
     ],
     imports: [
         BrowserModule,
