@@ -60,9 +60,11 @@ const appRoutes: Routes = [
         ContactLandingComponent,
     ],
     imports: [
-        BrowserModule,
+        BrowserModule.withServerTransition({ appId: 'serverApp' }),
         BrowserAnimationsModule,
-        RouterModule.forRoot(appRoutes),
+        RouterModule.forRoot(appRoutes, {
+    initialNavigation: 'enabled'
+}),
         CarouselModule.forRoot()
     ],
     providers: [],
