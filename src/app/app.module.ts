@@ -26,7 +26,7 @@ import { TestimonialsComponent } from './view/testimonials/testimonials.componen
 import { ContactLandingComponent } from './view/contact-landing/contact-landing.component';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideAnalytics, getAnalytics, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';
+import { provideAnalytics, getAnalytics, ScreenTrackingService, UserTrackingService, Analytics } from '@angular/fire/analytics';
 import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { provideMessaging, getMessaging } from '@angular/fire/messaging';
@@ -86,7 +86,7 @@ const appRoutes: Routes = [
         provideStorage(() => getStorage())
     ],
     providers: [
-        ScreenTrackingService, UserTrackingService
+        ScreenTrackingService
     ],
     bootstrap: [NavbarComponent, AppComponent, FooterComponent]
 })
