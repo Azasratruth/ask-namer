@@ -24,6 +24,15 @@ import { AskNamerCaseStudyComponent } from './view/ask-namer-case-study/ask-name
 import { AskNamerCaseStudyLandingComponent } from './view/ask-namer-case-study-landing/ask-namer-case-study-landing.component';
 import { TestimonialsComponent } from './view/testimonials/testimonials.component';
 import { ContactLandingComponent } from './view/contact-landing/contact-landing.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideMessaging,getMessaging } from '@angular/fire/messaging';
+import { providePerformance,getPerformance } from '@angular/fire/performance';
+import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
@@ -65,9 +74,19 @@ const appRoutes: Routes = [
         RouterModule.forRoot(appRoutes, {
     initialNavigation: 'enabled'
 }),
-        CarouselModule.forRoot()
+        CarouselModule.forRoot(),
+        provideFirebaseApp(() => initializeApp(environment.firebase)),
+        provideAnalytics(() => getAnalytics()),
+        provideDatabase(() => getDatabase()),
+        provideFirestore(() => getFirestore()),
+        provideMessaging(() => getMessaging()),
+        providePerformance(() => getPerformance()),
+        provideRemoteConfig(() => getRemoteConfig()),
+        provideStorage(() => getStorage())
     ],
-    providers: [],
+    providers: [
+    ScreenTrackingService,UserTrackingService
+  ],
     bootstrap: [NavbarComponent, AppComponent, FooterComponent]
 })
 export class AppModule { }

@@ -108,8 +108,20 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "ssr": "cloud-run",
+            "prerender": true,
+            "firebaseProject": "ask-namer",
+            "firebaseHostingSite": "asknamer",
+            "functionName": "ssr-ask-namer",
+            "functionsNodeVersion": "16.13",
+            "region": "us-central1",
+            "browserTarget": "ask-namer:build:production",
+            "serverTarget": "ask-namer:server:production",
+            "prerenderTarget": "ask-namer:prerender:production",
+            "outputPath": "dist/ask-namer/run"
+          }
         },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
