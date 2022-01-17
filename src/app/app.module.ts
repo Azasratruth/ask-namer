@@ -34,7 +34,6 @@ import { providePerformance, getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig, getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage, getStorage } from '@angular/fire/storage';
 
-
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
     { path: 'about-me', component: AboutMeComponent },
@@ -86,7 +85,6 @@ const appRoutes: Routes = [
         provideStorage(() => getStorage())
     ],
     providers: [
-        ScreenTrackingService
     ],
     bootstrap: [NavbarComponent, AppComponent, FooterComponent]
 })
