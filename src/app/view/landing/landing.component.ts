@@ -34,38 +34,44 @@ export class LandingComponent implements OnInit {
         });
 
         // <!-- Open Graph / Facebook -->
-        this.metaTagService.updateTag({
-            name: 'og:type', content: 'website'
-        });
-        this.metaTagService.updateTag({
-            name: 'og:url', content: 'https://asknamer.com/'
-        });
-        this.metaTagService.updateTag({
-            name: 'og:title', content: 'Ask Namer | Naming Agency | Haecceity'
-        });
-        this.metaTagService.updateTag({
-            name: 'og:description', content: 'We make your brand, startup, product name up to 7 times easier to remember than a normal name, providing it a lifelong advantage.'
-        });
-        this.metaTagService.updateTag({
-            name: 'og:image', content: 'https://asknamer.com/assets/images/meta.png'
-        });
+        // this.metaTagService.updateTag({
+        // //     name: 'og:type', content: 'website'
+        // // });
+        // // this.metaTagService.updateTag({
+        // //     name: 'og:url', content: 'https://asknamer.com/'
+        // // });
+        // // this.metaTagService.updateTag({
+        // //     name: 'og:title', content: 'Ask Namer | Naming Agency | Haecceity'
+        // // });
+        // // this.metaTagService.updateTag({
+        // //     name: 'og:description', content: 'We make your brand, startup, product name up to 7 times easier to remember than a normal name, providing it a lifelong advantage.'
+        // // });
+        // // this.metaTagService.updateTag({
+        // //     name: 'og:image', content: 'https://asknamer.com/assets/images/meta.png'
+        // // });
+        // // this.metaTagService.updateTag({
+        // //     name: 'og:image:secure_url', content: 'https://asknamer.com/assets/images/meta.png'
+        // // });
 
         // <!-- Twitter -->
-        this.metaTagService.updateTag({
-            name: 'twitter:card', content: 'summary_large_image'
-        });
-        this.metaTagService.updateTag({
-            name: 'twitter:url', content: 'https://asknamer.com/'
-        });
-        this.metaTagService.updateTag({
-            name: 'twitter:title', content: 'Ask Namer | Naming Agency | Haecceity'
-        });
-        this.metaTagService.updateTag({
-            name: 'twitter:description', content: 'We make your brand, startup, product name up to 7 times easier to remember than a normal name, providing it a lifelong advantage.'
-        });
-        this.metaTagService.updateTag({
-            name: 'twitter:image', content: 'https://asknamer.com/assets/images/meta.png'
-        });
+        // this.metaTagService.updateTag({
+        //     name: 'twitter:card', content: 'summary_large_image'
+        // });
+        // this.metaTagService.updateTag({
+        //     name: 'twitter:url', content: 'https://asknamer.com/'
+        // });
+        // this.metaTagService.updateTag({
+        //     name: 'twitter:title', content: 'Ask Namer | Naming Agency | Haecceity'
+        // });
+        // this.metaTagService.updateTag({
+        //     name: 'twitter:description', content: 'We make your brand, startup, product name up to 7 times easier to remember than a normal name, providing it a lifelong advantage.'
+        // });
+        // this.metaTagService.updateTag({
+        //     name: 'twitter:image', content: 'https://asknamer.com/assets/images/meta.png'
+        // });
+        // this.metaTagService.updateTag({
+        //     name: 'twitter:image:secure_url', content: 'https://asknamer.com/assets/images/meta.png'
+        // });
 
         gsap.registerPlugin(ScrollToPlugin);
         gsap.registerPlugin(ScrollTrigger);
