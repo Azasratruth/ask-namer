@@ -11,15 +11,13 @@ export class NomenclatureComponent implements OnInit {
     constructor(
         private titleService: Title,
         private metaTagService: Meta,
-    ) { }
-
-    ngOnInit(): void {
-
-        this.titleService.setTitle('Nomenclature | Ask Namer');
-        this.metaTagService.updateTag(
-            { name: 'description', content: 'The Art & Science of Naming. Semantics, Auditory Perception, Premium Names. Domain, Registration, and Trademark Screening.' }
-        );
-
+    ) {
+        this.titleService.setTitle('Nomenclature | The Art & Science of Naming | Ask Namer');
+        this.metaTagService.addTags([
+            { name: 'description', content: 'The Art & Science of Naming. Semantics, Auditory Perception, Premium Names. Domain, Registration, and Trademark Screening.' },
+        ]);
     }
+
+    ngOnInit(): void { }
 
 }

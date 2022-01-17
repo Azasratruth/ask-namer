@@ -11,15 +11,13 @@ export class NamesComponent implements OnInit {
     constructor(
         private titleService: Title,
         private metaTagService: Meta,
-    ) { }
-
-    ngOnInit(): void {
-
+    ) {
         this.titleService.setTitle('Names aka Portfolio | Ask Namer');
-        this.metaTagService.updateTag(
-            { name: 'description', content: 'The names in my portfolio. Names ranging from startups, products, brands, magazines, and even fishes.' }
-        );
-
+        this.metaTagService.addTags([
+            { name: 'description', content: 'The names in my portfolio. Names ranging from startups, products, brands, magazines, and even fishes.' },
+        ]);
     }
+
+    ngOnInit(): void { }
 
 }

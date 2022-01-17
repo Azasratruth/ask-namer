@@ -15,15 +15,14 @@ export class AboutMeComponent implements OnInit {
     constructor(
         private titleService: Title,
         private metaTagService: Meta,
-    ) { }
+    ) {
+        this.titleService.setTitle('About Me | Ask Namer');
+        this.metaTagService.addTags([
+            { name: 'description', content: 'Ask Namer is a solo endeavor. My cause is to help people, who are doing something positive, get recognized by their name. Majority of my clientele has been startups.' },
+        ]);
+    }
 
     ngOnInit(): void {
-
-        this.titleService.setTitle('About Me | Ask Namer');
-        this.metaTagService.updateTag(
-            { name: 'description', content: "Ask Namer is a solo endeavor. My cause is to help people, who are doing something positive, get recognized by their name. Majority of my clientele has been startups." }
-        );
-
         gsap.registerPlugin(ScrollToPlugin);
         gsap.registerPlugin(ScrollTrigger);
 

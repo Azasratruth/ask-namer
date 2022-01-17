@@ -13,14 +13,13 @@ export class AskNamerCaseStudyComponent implements OnInit {
     constructor(
         private titleService: Title,
         private metaTagService: Meta,
-    ) { }
-
-    ngOnInit(): void {
+    ) {
         this.titleService.setTitle('Case Study - Ask Namer | Ask Namer');
-        this.metaTagService.updateTag(
-            { name: 'description', content: '' }
-        );
-
+        this.metaTagService.addTags([
+            { name: 'description', content: 'The break down of the values of the name Ask Namer.' },
+        ]);
     }
+
+    ngOnInit(): void { }
 
 }
