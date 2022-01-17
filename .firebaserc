@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ask-namer": {
+      "hosting": {
+        "ask-namer": [
+          "asknamer"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ask-namer"
+  }
+}
