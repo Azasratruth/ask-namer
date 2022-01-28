@@ -71,12 +71,34 @@ export class LandingComponent implements OnInit {
         }, '-=3.5');
 
 
+        // var txt = gsap.timeline();
+
+        // txt.to('#txt-1', {
+        //     opacity: 0,
+        //     delay: 1,
+        //     duration: 0.5,
+        // });
+
+        // txt.to('#txt-2', {
+        //     opacity: 1,
+        //     duration: 0.5
+        // });
+
+        // txt.to('#txt-2', {
+        //     opacity: 0,
+        //     delay: 1,
+        //     duration: 0.5,
+        // });
+
+        // txt.to('#txt-1', {
+        //     opacity: 1,
+        //     duration: 0.5
+        // });
+
+        // txt.repeat(-1);
+
+        // var master = gsap.timeline();
+        // master.add(tl).add(txt);
+
     }
-
-
-    // public cardHoverOn(object) {
-    // }
-
-    // public cardHoverOff(object) {
-    // }
 }
