@@ -51,14 +51,14 @@ export class LandingComponent implements OnInit {
         tl.from('.name-img-border, .revamp', {
             scrollTrigger: '.name-img-border',
             y: -50,
-            duration: 2.5,
+            duration: 1.5,
             opacity: 0,
             ease: "expo.out"
         }, '+=1.0');
 
         tl.from('.name-text', {
             scrollTrigger: '.name-text',
-            duration: 5,
+            duration: 3,
             opacity: 0,
             ease: "bounce.in"
         }, '-=1.5');

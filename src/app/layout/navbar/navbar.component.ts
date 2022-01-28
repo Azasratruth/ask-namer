@@ -33,7 +33,7 @@ export class NavbarComponent implements OnInit {
 
         tl.from('.name-row-left', {
             x: '-100vw',
-            duration: 1.5,
+            duration: 1,
             ease: 'expo.out',
         }, '+=0.5');
 
@@ -41,7 +41,7 @@ export class NavbarComponent implements OnInit {
         tl.from('.name-row-right', {
             x: '-80vw',
             opacity: 0,
-            duration: 2,
+            duration: 1.5,
             ease: 'expo.out',
         }, '+=0.1');
 
@@ -49,14 +49,14 @@ export class NavbarComponent implements OnInit {
         // Logo
         tl.from('.logo-container', {
             y: '-5rem',
-            duration: 1,
+            duration: 0.8,
             ease: 'expo.out',
         }, '-=0.5');
 
         // Nav Toggle
         tl.from('.nav-close-container', {
             y: '5rem',
-            duration: 1,
+            duration: 0.8,
             ease: 'expo.out',
         }, '-=1');
 
