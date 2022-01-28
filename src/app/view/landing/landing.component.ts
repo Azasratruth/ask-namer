@@ -46,9 +46,19 @@ export class LandingComponent implements OnInit {
 
         gsap.to(window, { duration: 0, scrollTo: 0 });
 
+        var revamp = gsap.timeline();
+
+        revamp.from('.revamp', {
+            y: -50,
+            delay: 1,
+            duration: 1.5,
+            opacity: 0,
+            ease: "expo.out"
+        });
+
         var tl = gsap.timeline();
 
-        tl.from('.name-img-border, .revamp', {
+        tl.from('.name-img-border', {
             scrollTrigger: '.name-img-border',
             y: -50,
             duration: 1.5,

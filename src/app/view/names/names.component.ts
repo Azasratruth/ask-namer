@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { gsap } from 'gsap';
 
 @Component({
     selector: 'app-names',
@@ -18,6 +19,16 @@ export class NamesComponent implements OnInit {
         ]);
     }
 
-    ngOnInit(): void { }
+    ngOnInit(): void {
+        this.openingAnimation();
+    }
 
+    private openingAnimation() {
+        var tl = gsap.timeline();
+
+        // tl.to('.nav-bg::before, .generic-cont::before', {
+        //     opacity: 0,
+        //     duration: 1.5,
+        // });
+    }
 }
