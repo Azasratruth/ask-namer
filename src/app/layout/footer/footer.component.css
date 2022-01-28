@@ -1,6 +1,8 @@
 .custom-footer-bottom {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   background-color: rgba(250, 250, 250, 0.8);
   color: var(--always-moving-block-black);
@@ -9,9 +11,16 @@
 
   z-index: -2;
   margin: 0;
-  padding: 1.2rem;
+  padding: 13px;
 }
 
+.cfb-text {
+  margin: 3px;
+}
+
+.under-line {
+  background-color: unset;
+}
 
 .custom-footer {
   position: relative;
@@ -46,4 +55,26 @@
   width: min-content;
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+  .custom-footer-bottom {
+    padding: 1.5rem;
+  }
+
+  .cfb-text {
+    position: absolute;
+  }
+
+  .loc {
+    left: 7px;
+  }
+
+  .email {
+    right: 7px;
+  }
+
+  .rights {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
