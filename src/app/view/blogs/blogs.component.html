@@ -1,0 +1,51 @@
+<app-page-animation></app-page-animation>
+
+<div class="gap"></div>
+
+<div class="generic-cont">
+
+    <div class="gap"></div>
+
+    <h1 class="gen-title text">Brief Blogs</h1>
+
+    <div class="link-blog" (mouseleave)="linkHoverOff('#whats-in-a-name')">
+        <a class="link-blog" [routerLink]="['/values-in-names']">
+
+            <div class="gen-body blog" id="whats-in-a-name" (mouseenter)="linkHoverOn('#whats-in-a-name')">
+
+                <img class="img" id="apple" src="/assets/images/blogs/word-art-sq.png"
+                    alt="a word cloud of the words used in the blog, arranged in the shape of an apple" />
+                <br>
+
+                <div class="hor">
+                    <h2 class="head text">What's in a name?</h2><br>
+                    <p class="gen-subtitle text">There are many values in names</p>
+                </div>
+
+            </div>
+
+        </a>
+    </div>
+
+    <div class="link-blog" (mouseleave)="linkHoverOff('#facts-brand-names')">
+        <a class="link-blog" [routerLink]="['/facts-about-brand-names']">
+
+            <div class="gen-body blog" id="facts-brand-names" (mouseenter)="linkHoverOn('#facts-brand-names')">
+
+                <img class="img" src="/assets/images/blogs/braydon-anderson-wOHH-NUTvVc-unsplash-comp-sq.jpg"
+                    alt="a dog looking like an intellectual with a big fake nose and big glasses" />
+                <br>
+
+                <div class="hor">
+                    <h2 class="head text">Facts About Brand Names</h2>
+                    <br>
+                    <p class="gen-subtitle text">Power of phonetics</p>
+                </div>
+
+            </div>
+        </a>
+    </div>
+
+    <div class="gap"></div>
+
+</div>

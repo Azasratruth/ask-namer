@@ -15,41 +15,6 @@ export class FooterComponent implements OnInit {
 
     ngOnInit(): void {
         gsap.registerPlugin(ScrollTrigger);
-
-        this.animation();
-    }
-
-    private openingAnimation() {
-        // const animation = this.gsapService;
-    }
-
-    private animation() {
-
-        var footer = gsap.timeline();
-
-        // footer.from('.custom-footer, .custom-footer-bottom', {
-
-        //     scrollTrigger: {
-        //         trigger: '.custom-footer',
-        //         pin: true,
-        //         // start: "top top",
-        //         start: "top bottom",
-        //         // end: "bottom bottom",
-        //         markers: true,
-        //         toggleActions: "restart pause reverse pause"
-        //     },
-
-        //     opacity: 0,
-        //     y: '100%',
-        //     duration: 2
-        // });
-
-        // footer.from('.custom-footer-bottom', {
-        //     // scrollTrigger: '.custom-footer-bottom',
-        //     opacity: 0,
-        //     y: '100%',
-        //     duration: 2
-        // });
     }
 
     public linkHoverOn(object) {

@@ -33,6 +33,7 @@ import { provideMessaging, getMessaging } from '@angular/fire/messaging';
 import { providePerformance, getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig, getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage, getStorage } from '@angular/fire/storage';
+import { BlogsComponent } from './view/blogs/blogs.component';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
@@ -42,7 +43,8 @@ const appRoutes: Routes = [
     { path: 'nomenclature', component: NomenclatureComponent },
     { path: 'haecceity', component: HaecceityComponent },
     { path: 'terms-and-agreement', component: TermsAndAgreementComponent },
-    { path: 'ask-namer-case-study', component: AskNamerCaseStudyComponent }
+    { path: 'ask-namer-case-study', component: AskNamerCaseStudyComponent },
+    { path: 'brief-blogs', component: BlogsComponent }
 ];
 
 
@@ -67,6 +69,7 @@ const appRoutes: Routes = [
         AskNamerCaseStudyLandingComponent,
         TestimonialsComponent,
         ContactLandingComponent,
+        BlogsComponent,
     ],
     imports: [
         BrowserModule.withServerTransition({ appId: 'serverApp' }),
