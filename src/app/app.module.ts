@@ -34,6 +34,7 @@ import { providePerformance, getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig, getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage, getStorage } from '@angular/fire/storage';
 import { BlogsComponent } from './view/blogs/blogs.component';
+import { BlogWhatsInABrandNameComponent } from './view/blog-whats-in-a-brand-name/blog-whats-in-a-brand-name.component';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
@@ -44,7 +45,8 @@ const appRoutes: Routes = [
     { path: 'haecceity', component: HaecceityComponent },
     { path: 'terms-and-agreement', component: TermsAndAgreementComponent },
     { path: 'ask-namer-case-study', component: AskNamerCaseStudyComponent },
-    { path: 'brief-blogs', component: BlogsComponent }
+    { path: 'brief-blogs', component: BlogsComponent },
+    { path: 'whats-in-a-brand-name', component: BlogWhatsInABrandNameComponent }
 ];
 
 
@@ -70,6 +72,7 @@ const appRoutes: Routes = [
         TestimonialsComponent,
         ContactLandingComponent,
         BlogsComponent,
+        BlogWhatsInABrandNameComponent,
     ],
     imports: [
         BrowserModule.withServerTransition({ appId: 'serverApp' }),

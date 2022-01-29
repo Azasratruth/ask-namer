@@ -1,0 +1,47 @@
+/* .name-img-cont {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.name-img {
+  width: 319px;
+  height: 310px;
+
+  background-image: url('/assets/images/blogs/braydon-anderson-wOHH-NUTvVc-unsplash-comp-sq.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.generic-cont {
+  background-image: url('/assets/images/fakurian-design-_S-zZyQiOr8-unsplash-comp.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+.head {
+  letter-spacing: 5px;
+}
+
+.gen-body {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.blog-body {
+  margin: 0 2.5rem;
+  font-size: 1.2rem;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.blog-sub-head {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .blog-body {
+    margin: 0 4rem;
+  }
+}
