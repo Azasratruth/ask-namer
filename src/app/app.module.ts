@@ -35,6 +35,7 @@ import { provideRemoteConfig, getRemoteConfig } from '@angular/fire/remote-confi
 import { provideStorage, getStorage } from '@angular/fire/storage';
 import { BlogsComponent } from './view/blogs/blogs.component';
 import { BlogWhatsInABrandNameComponent } from './view/blog-whats-in-a-brand-name/blog-whats-in-a-brand-name.component';
+import { FactsAboutSoundSymbolismComponent } from './view/facts-about-sound-symbolism/facts-about-sound-symbolism.component';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
@@ -46,7 +47,8 @@ const appRoutes: Routes = [
     { path: 'terms-and-agreement', component: TermsAndAgreementComponent },
     { path: 'ask-namer-case-study', component: AskNamerCaseStudyComponent },
     { path: 'brief-blogs', component: BlogsComponent },
-    { path: 'whats-in-a-brand-name', component: BlogWhatsInABrandNameComponent }
+    { path: 'brief-blogs/whats-in-a-brand-name', component: BlogWhatsInABrandNameComponent },
+    { path: 'brief-blogs/the-sound-of-success-how-brands-can-benefit-from-phonetics', component: FactsAboutSoundSymbolismComponent }
 ];
 
 
@@ -73,6 +75,7 @@ const appRoutes: Routes = [
         ContactLandingComponent,
         BlogsComponent,
         BlogWhatsInABrandNameComponent,
+        FactsAboutSoundSymbolismComponent,
     ],
     imports: [
         BrowserModule.withServerTransition({ appId: 'serverApp' }),

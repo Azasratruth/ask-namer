@@ -3,7 +3,7 @@
   height: 4rem;
 
   content: "";
-  background-image: url('/assets/images/blogs/bg/shubham-dhage-8yjryUayhzQ-unsplash-comp.jpg');
+  background-image: url('/assets/images/blogs/bg/fakurian-design-0ODr49sXVkA-comp.jpg');
   background-size: cover;
   background-position: 0 40%;
   background-repeat: no-repeat;
@@ -15,19 +15,19 @@
   z-index: 10;
   opacity: 0.5;
 
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV";
 }
 
 .generic-cont::before {
   content: "";
-  background-image: url('/assets/images/blogs/bg/shubham-dhage-8yjryUayhzQ-unsplash-comp.jpg');
+  background-image: url('/assets/images/blogs/bg/fakurian-design-0ODr49sXVkA-unsplash-comp.jpg');
   background-size: cover;
-  background-position: 71%;
+  background-position: 10%;
   background-repeat: no-repeat;
   position: absolute;
   top: 32px;
@@ -36,6 +36,7 @@
   left: 0px;
   opacity: 0.4;
 }
+
 
 .head {
   letter-spacing: 5px;

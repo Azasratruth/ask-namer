@@ -20,15 +20,5 @@ export class NamesComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.openingAnimation();
-    }
-
-    private openingAnimation() {
-        var tl = gsap.timeline();
-
-        // tl.to('.nav-bg::before, .generic-cont::before', {
-        //     opacity: 0,
-        //     duration: 1.5,
-        // });
     }
 }

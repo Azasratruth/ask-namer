@@ -142,6 +142,25 @@ body {
   font-size: 1rem;
 }
 
+
+/* For Blogs */
+
+.blog-back-btn {
+  display: block;
+  position: absolute;
+  left: 15px;
+}
+
+.blg-bk-btn-tp {
+  top: 50px;
+}
+
+.blg-bk-btn-btm {
+  bottom: 50px;
+}
+
+/* Blogs End */
+
 /* Generic Container End */
 
 
