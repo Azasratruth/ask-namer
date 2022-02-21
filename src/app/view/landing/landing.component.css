@@ -76,11 +76,11 @@
 
 .flex-2 {
   /* content: ""; */
-  background-image: url('/assets/images/bg/pawel-czerwinski-VOe1u5aCeIo-unsplash-turned.jpg');
+  /* background-image: url('/assets/images/bg/pawel-czerwinski-VOe1u5aCeIo-unsplash-turned.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   mix-blend-mode: color-burn;
-  opacity: 0.9;
+  opacity: 0.9; */
 }
 
 .l-pad {

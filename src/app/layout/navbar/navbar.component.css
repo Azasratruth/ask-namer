@@ -75,7 +75,8 @@
 .logo {
   width: inherit;
   height: inherit;
-  background-color: var(--always-moving-block-black);
+  /* background-color: var(--always-moving-block-black); */
+  /* background-color: rgba(240, 240, 240, 0.1); */
   border-radius: 100px;
 }
 
