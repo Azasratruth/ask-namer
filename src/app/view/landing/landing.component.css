@@ -8,18 +8,6 @@
   background-color: var(--always-moving-block-black);
 }
 
-/* Name Heading */
-
-.flex-1 {
-  position: relative;
-  z-index: 5;
-  overflow: hidden;
-  margin-top: 2.6rem;
-  margin-bottom: 2rem;
-}
-
-/* Name Heading End */
-
 /* Nav */
 .nav-bg::before {
   width: 100%;
@@ -61,6 +49,8 @@
   margin: 0;
   padding-top: 15px;
 }
+
+
 
 
 /* Intro End */
