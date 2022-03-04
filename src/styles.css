@@ -39,6 +39,7 @@ body {
         -webkit-filter: invert(1) contrast(1); */
 }
 
+
 /* For flipping cards */
 .text-light {
   color: white;
@@ -104,6 +105,12 @@ body {
 }
 
 /* Generic Container */
+.generic-cont-l {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--always-moving-block-black);
+}
+
 .generic-cont {
   display: flex;
   flex-direction: column;

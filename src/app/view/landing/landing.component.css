@@ -41,7 +41,8 @@
 
 .flex-2 {
   /* content: ""; */
-  background-image: url('/assets/images/bg/pawel-czerwinski-VOe1u5aCeIo-unsplash-turned.jpg');
+  /* background-image: url('/assets/images/bg/pawel-czerwinski-VOe1u5aCeIo-unsplash-turned.jpg'); */
+  background-image: url('/assets/images/bg/toa-heftiba-_UIVmIBB3JU-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   /* mix-blend-mode: color-burn; */
@@ -52,6 +53,23 @@
   display: inline-block;
   margin: 0;
   padding-top: 15px;
+}
+
+/* .title-text-box,
+.subtitle-text-box {} */
+
+.title-text-box {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  box-shadow: 5 5 5 rgb(0, 0, 0);
+}
+
+.subtitle-text-box {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  box-shadow: 5 5 5 rgb(0, 0, 0);
 }
 
 
