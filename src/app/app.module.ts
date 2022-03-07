@@ -37,6 +37,7 @@ import { BlogsComponent } from './view/blogs/blogs.component';
 import { BlogWhatsInABrandNameComponent } from './view/blog-whats-in-a-brand-name/blog-whats-in-a-brand-name.component';
 import { FactsAboutSoundSymbolismComponent } from './view/facts-about-sound-symbolism/facts-about-sound-symbolism.component';
 import { CaseStudyTemplateComponent } from './view/case-study-template/case-study-template.component';
+import { CaseStudyPetroxiComponent } from './view/case-study-petroxi/case-study-petroxi.component';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
@@ -78,6 +79,7 @@ const appRoutes: Routes = [
         BlogWhatsInABrandNameComponent,
         FactsAboutSoundSymbolismComponent,
         CaseStudyTemplateComponent,
+        CaseStudyPetroxiComponent,
     ],
     imports: [
         BrowserModule.withServerTransition({ appId: 'serverApp' }),
