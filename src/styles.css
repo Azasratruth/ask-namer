@@ -6,9 +6,7 @@
   --lux-black: rgb(34, 34, 34);
   --block-black: rgb(12, 12, 12);
   --moving-block-black: rgb(7, 7, 7);
-  --always-moving-block-black: rgba(12, 12, 15, 0.9);
-  /* Eigengrau */
-  /* --always-moving-block-black: rgba(22, 22, 29, 0.9); */
+  --always-moving-block-black: rgba(8, 8, 12, 0.9);
 }
 
 html,

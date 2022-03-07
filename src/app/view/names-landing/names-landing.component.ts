@@ -10,6 +10,13 @@ export class NamesLandingComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+
+  private template() {
+
+    // var $temp = "";
+
   }
 
 }

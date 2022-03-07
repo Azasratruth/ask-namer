@@ -1,7 +1,3 @@
-:root {
-  /* --skew: #1e90ff; */
-}
-
 .revamp {
   display: flex;
   text-align: center;
@@ -44,17 +40,14 @@
   align-items: center;
 }
 
-.int-l {
-  text-align: center;
-  margin: 0 2rem;
-}
-
 .desc-alt {
   font-size: 1.5rem;
 }
 
-
-.int-r {}
+.int-l {
+  text-align: center;
+  margin: 0 2rem;
+}
 
 .breakdown {
   max-height: 90vh;
@@ -63,12 +56,6 @@
 
   background-color: rgba(0, 0, 10, 0.3);
   box-shadow: 0px 0px 9px #f0f0f0;
-}
-
-
-.boxes {
-  display: flex;
-  flex-direction: column;
 }
 
 /* Intro End */

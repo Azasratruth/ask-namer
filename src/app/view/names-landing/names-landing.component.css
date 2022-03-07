@@ -1,5 +1,10 @@
 .names-cont {
-  background-color: rgba(16, 24, 32, 0.8);
+  /* background-color: rgba(16, 24, 32, 0.8); */
+  /* background-color: rgba(172, 173, 184, 1); */
+  /* background-color: rgba(240, 250, 256, 1); */
+  /* background-color: rgba(245, 245, 245, 0.8); */
+  /* background-color: rgba(20, 24, 30, 0.9); */
+  background-color: rgba(6, 6, 8, 0.9);
 }
 
 .names-head,
@@ -32,6 +37,20 @@
 
 .small-caps {
   font-variant: small-caps;
+}
+
+.body-shortened {
+  font-size: 1.3rem;
+}
+
+.w-to-b-text {
+  background-color: white;
+  color: rgba(6, 6, 8, 0.9);
+  padding: 0 5px;
+}
+
+.und-line-fix {
+  display: inline-flex;
 }
 
 /* CSS FLIP */
