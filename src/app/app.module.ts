@@ -36,6 +36,7 @@ import { provideStorage, getStorage } from '@angular/fire/storage';
 import { BlogsComponent } from './view/blogs/blogs.component';
 import { BlogWhatsInABrandNameComponent } from './view/blog-whats-in-a-brand-name/blog-whats-in-a-brand-name.component';
 import { FactsAboutSoundSymbolismComponent } from './view/facts-about-sound-symbolism/facts-about-sound-symbolism.component';
+import { CaseStudyTemplateComponent } from './view/case-study-template/case-study-template.component';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
@@ -76,6 +77,7 @@ const appRoutes: Routes = [
         BlogsComponent,
         BlogWhatsInABrandNameComponent,
         FactsAboutSoundSymbolismComponent,
+        CaseStudyTemplateComponent,
     ],
     imports: [
         BrowserModule.withServerTransition({ appId: 'serverApp' }),
