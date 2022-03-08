@@ -40,6 +40,7 @@ import { CaseStudyTemplateComponent } from './view/case-study-template/case-stud
 import { CaseStudyPetroxiComponent } from './view/case-study-petroxi/case-study-petroxi.component';
 import { CaseStudyServedTodayComponent } from './view/case-study-served-today/case-study-served-today.component';
 import { CaseStudyDuftUndDuComponent } from './view/case-study-duft-und-du/case-study-duft-und-du.component';
+import { CaseStudyAviriBComponent } from './view/case-study-aviri-b/case-study-aviri-b.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingComponent },
@@ -56,6 +57,7 @@ const appRoutes: Routes = [
   { path: 'case-study/petroxi', component: CaseStudyPetroxiComponent },
   { path: 'case-study/served-today', component: CaseStudyServedTodayComponent },
   { path: 'case-study/duft-und-du', component: CaseStudyDuftUndDuComponent },
+  { path: 'case-study/aviri-b', component: CaseStudyAviriBComponent },
 ];
 
 
@@ -87,6 +89,7 @@ const appRoutes: Routes = [
     CaseStudyPetroxiComponent,
     CaseStudyServedTodayComponent,
     CaseStudyDuftUndDuComponent,
+    CaseStudyAviriBComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

@@ -14,13 +14,6 @@
   left: 0px;
   z-index: 10;
   opacity: 0.5;
-
-  /* -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH"; */
 }
 
 .generic-cont::before {
@@ -179,8 +172,7 @@
 
 /* FLIP End */
 
-@media (min-width: 450px) {}
-
+/* For this specific pic of a person looking at arts */
 /* For large screens */
 @media (min-width: 768px) {
   .nav-bg::before {
