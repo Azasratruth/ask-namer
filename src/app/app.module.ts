@@ -41,6 +41,7 @@ import { CaseStudyPetroxiComponent } from './view/case-study-petroxi/case-study-
 import { CaseStudyServedTodayComponent } from './view/case-study-served-today/case-study-served-today.component';
 import { CaseStudyDuftUndDuComponent } from './view/case-study-duft-und-du/case-study-duft-und-du.component';
 import { CaseStudyAviriBComponent } from './view/case-study-aviri-b/case-study-aviri-b.component';
+import { CaseStudyNinetyDegreesNormalComponent } from './view/case-study-ninety-degrees-normal/case-study-ninety-degrees-normal.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingComponent },
@@ -58,6 +59,7 @@ const appRoutes: Routes = [
   { path: 'case-study/served-today', component: CaseStudyServedTodayComponent },
   { path: 'case-study/duft-und-du', component: CaseStudyDuftUndDuComponent },
   { path: 'case-study/aviri-b', component: CaseStudyAviriBComponent },
+  { path: 'case-study/90-degrees-normal', component: CaseStudyNinetyDegreesNormalComponent },
 ];
 
 
@@ -90,6 +92,7 @@ const appRoutes: Routes = [
     CaseStudyServedTodayComponent,
     CaseStudyDuftUndDuComponent,
     CaseStudyAviriBComponent,
+    CaseStudyNinetyDegreesNormalComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
