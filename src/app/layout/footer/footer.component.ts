@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import gsap from 'gsap';
-// import { GsapService } from 'src/app/service/gsap.service';
 
 @Component({
   selector: 'app-footer',
