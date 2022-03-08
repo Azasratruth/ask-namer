@@ -43,6 +43,7 @@ import { CaseStudyDuftUndDuComponent } from './view/case-study-duft-und-du/case-
 import { CaseStudyAviriBComponent } from './view/case-study-aviri-b/case-study-aviri-b.component';
 import { CaseStudyNinetyDegreesNormalComponent } from './view/case-study-ninety-degrees-normal/case-study-ninety-degrees-normal.component';
 import { CaseStudyPlethoraComponent } from './view/case-study-plethora/case-study-plethora.component';
+import { ProjectsWithAgenciesComponent } from './view/projects-with-agencies/projects-with-agencies.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingComponent },
@@ -96,6 +97,7 @@ const appRoutes: Routes = [
     CaseStudyAviriBComponent,
     CaseStudyNinetyDegreesNormalComponent,
     CaseStudyPlethoraComponent,
+    ProjectsWithAgenciesComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
