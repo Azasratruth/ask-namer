@@ -139,9 +139,53 @@ body {
   letter-spacing: 5px;
 }
 
+.small-caps {
+  font-variant: small-caps;
+}
+
 .body-shortened {
   font-size: 1rem;
 }
+
+/* Name and Case Study components */
+.head-body-avg {
+  display: inline-flex;
+  font-size: 1.8rem;
+  font-weight: 300;
+
+  background-color: white;
+  color: rgba(6, 6, 8, 0.9);
+  padding-top: 2px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.body-avg {
+  font-size: 1.3rem;
+  letter-spacing: 2.3;
+}
+
+
+.highlight {
+  padding-left: 7px;
+  padding-right: 3px;
+  line-height: 1.3;
+}
+
+.w-to-b-text {
+  background-color: white;
+  color: rgba(6, 6, 8, 0.9);
+}
+
+.w-to-r-text {
+  background-color: rgba(250, 100, 100, 0.9);
+}
+
+.w-to-r-text {
+  background-color: rgba(250, 100, 100, 0.9);
+}
+
+/* End - Name and Case Study components */
 
 
 /* For Blogs */
