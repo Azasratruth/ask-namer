@@ -1,0 +1,28 @@
+.image {
+  /* 13 x 24 */
+  /* 15 */
+  height: 195px;
+  width: 360px;
+  background-color: rgba(6, 8, 8, 1);
+}
+
+
+/* For small screens */
+@media (min-width: 500px) {
+
+  /* x20 */
+  .image {
+    height: 260px;
+    width: 480px;
+  }
+}
+
+/* For large screens */
+@media (min-width: 768px) {
+
+  /* x40 */
+  .image {
+    height: 520px;
+    width: 960px;
+  }
+}
