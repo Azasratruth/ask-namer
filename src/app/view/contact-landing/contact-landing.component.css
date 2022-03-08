@@ -1,12 +1,6 @@
-.centered {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .generic-cont {
   background-color: rgba(6, 8, 8, 0.9);
+  box-shadow: 0 0 10px 5px rgba(6, 8, 8, 0.9);
 }
 
 .gen-title {
@@ -26,6 +20,27 @@
 }
 
 .w-to-b-text {
+  padding-top: 3px;
+  padding-bottom: 5px;
   padding-left: 12px;
   padding-right: 11px;
+}
+
+.br-sm {
+  display: block;
+  margin-bottom: -30px;
+}
+
+/* For small screens */
+@media (min-width: 450px) {
+  .br-sm {
+    display: none;
+  }
+}
+
+/* For large screens */
+@media (min-width: 768px) {
+  .br-sm {
+    display: none;
+  }
 }
