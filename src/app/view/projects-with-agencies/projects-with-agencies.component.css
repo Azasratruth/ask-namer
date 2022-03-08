@@ -1,0 +1,29 @@
+.generic-cont {
+  background-color: rgba(6, 6, 8, 0.9);
+}
+
+.flex-box-c,
+.names-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.spaced {
+  letter-spacing: 2.3;
+}
+
+.w-to-r-text {
+  padding-right: 9px;
+}
+
+.und-line-fix {
+  display: inline-flex;
+}
+
+
+/* other agen */
+.two-flex {
+  margin-top: -1rem;
+}
