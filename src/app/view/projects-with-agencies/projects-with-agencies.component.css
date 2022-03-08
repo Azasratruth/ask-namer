@@ -1,29 +1,16 @@
-.generic-cont {
-  background-color: rgba(6, 6, 8, 0.9);
-}
-
-.flex-box-c,
-.names-body {
+.flex-1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: flex-start;
 }
 
-.spaced {
-  letter-spacing: 2.3;
+.f-c {
+  margin-right: 20px;
 }
 
-.w-to-r-text {
-  padding-right: 9px;
-}
-
-.und-line-fix {
-  display: inline-flex;
-}
-
-
-/* other agen */
-.two-flex {
-  margin-top: -1rem;
+/* For large screens */
+@media (min-width: 768px) {
+  .flex-1 {
+    flex-direction: row;
+  }
 }

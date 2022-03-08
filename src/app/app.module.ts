@@ -63,7 +63,6 @@ const appRoutes: Routes = [
   { path: 'case-study/aviri-b', component: CaseStudyAviriBComponent },
   { path: 'case-study/90-degrees-normal', component: CaseStudyNinetyDegreesNormalComponent },
   { path: 'case-study/plethora', component: CaseStudyPlethoraComponent },
-  { path: 'agencies', component: ProjectsWithAgenciesComponent },
 ];
 
 
