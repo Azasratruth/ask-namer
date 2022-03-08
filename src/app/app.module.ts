@@ -38,6 +38,7 @@ import { BlogWhatsInABrandNameComponent } from './view/blog-whats-in-a-brand-nam
 import { FactsAboutSoundSymbolismComponent } from './view/facts-about-sound-symbolism/facts-about-sound-symbolism.component';
 import { CaseStudyTemplateComponent } from './view/case-study-template/case-study-template.component';
 import { CaseStudyPetroxiComponent } from './view/case-study-petroxi/case-study-petroxi.component';
+import { CaseStudyServedTodayComponent } from './view/case-study-served-today/case-study-served-today.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingComponent },
@@ -52,6 +53,7 @@ const appRoutes: Routes = [
   { path: 'brief-blogs/whats-in-a-brand-name', component: BlogWhatsInABrandNameComponent },
   { path: 'brief-blogs/the-sound-of-success-how-brands-can-benefit-from-phonetics', component: FactsAboutSoundSymbolismComponent },
   { path: 'case-study/petroxi', component: CaseStudyPetroxiComponent },
+  { path: 'case-study/served-today', component: CaseStudyServedTodayComponent },
 ];
 
 
@@ -81,6 +83,7 @@ const appRoutes: Routes = [
     FactsAboutSoundSymbolismComponent,
     CaseStudyTemplateComponent,
     CaseStudyPetroxiComponent,
+    CaseStudyServedTodayComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

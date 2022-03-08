@@ -148,6 +148,11 @@ body {
 }
 
 /* Name and Case Study components */
+
+.op-black {
+  background-color: rgba(6, 8, 8, 0.9);
+}
+
 .head-body-avg {
   display: inline-flex;
   font-size: 1.8rem;
@@ -165,7 +170,6 @@ body {
   letter-spacing: 2.3;
 }
 
-
 .highlight {
   padding-left: 7px;
   padding-right: 3px;
@@ -181,9 +185,7 @@ body {
   background-color: rgba(250, 100, 100, 0.9);
 }
 
-.w-to-r-text {
-  background-color: rgba(250, 100, 100, 0.9);
-}
+
 
 /* End - Name and Case Study components */
 
