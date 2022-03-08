@@ -40,66 +40,67 @@ import { CaseStudyTemplateComponent } from './view/case-study-template/case-stud
 import { CaseStudyPetroxiComponent } from './view/case-study-petroxi/case-study-petroxi.component';
 
 const appRoutes: Routes = [
-    { path: '', component: LandingComponent },
-    { path: 'about-me', component: AboutMeComponent },
-    { path: 'connect', component: ContactComponent },
-    { path: 'names', component: NamesComponent },
-    { path: 'nomenclature', component: NomenclatureComponent },
-    { path: 'haecceity', component: HaecceityComponent },
-    { path: 'terms-and-agreement', component: TermsAndAgreementComponent },
-    { path: 'ask-namer-case-study', component: AskNamerCaseStudyComponent },
-    { path: 'brief-blogs', component: BlogsComponent },
-    { path: 'brief-blogs/whats-in-a-brand-name', component: BlogWhatsInABrandNameComponent },
-    { path: 'brief-blogs/the-sound-of-success-how-brands-can-benefit-from-phonetics', component: FactsAboutSoundSymbolismComponent }
+  { path: '', component: LandingComponent },
+  { path: 'about-us', component: AboutMeComponent },
+  { path: 'connect', component: ContactComponent },
+  { path: 'names', component: NamesComponent },
+  { path: 'nomenclature', component: NomenclatureComponent },
+  { path: 'haecceity', component: HaecceityComponent },
+  { path: 'terms-and-agreement', component: TermsAndAgreementComponent },
+  { path: 'ask-namer-case-study', component: AskNamerCaseStudyComponent },
+  { path: 'brief-blogs', component: BlogsComponent },
+  { path: 'brief-blogs/whats-in-a-brand-name', component: BlogWhatsInABrandNameComponent },
+  { path: 'brief-blogs/the-sound-of-success-how-brands-can-benefit-from-phonetics', component: FactsAboutSoundSymbolismComponent },
+  { path: 'case-study/petroxi', component: CaseStudyPetroxiComponent },
 ];
 
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        NavbarComponent,
-        FooterComponent,
-        LandingComponent,
-        AboutMeComponent,
-        ContactComponent,
-        PageAnimationComponent,
-        AskVoidComponent,
-        TermsAndAgreementComponent,
-        NomenclatureComponent,
-        NamesComponent,
-        HaecceityComponent,
-        NomenclatureLandingComponent,
-        HaecceityLandingComponent,
-        NamesLandingComponent,
-        AskNamerCaseStudyComponent,
-        AskNamerCaseStudyLandingComponent,
-        TestimonialsComponent,
-        ContactLandingComponent,
-        BlogsComponent,
-        BlogWhatsInABrandNameComponent,
-        FactsAboutSoundSymbolismComponent,
-        CaseStudyTemplateComponent,
-        CaseStudyPetroxiComponent,
-    ],
-    imports: [
-        BrowserModule.withServerTransition({ appId: 'serverApp' }),
-        BrowserAnimationsModule,
-        RouterModule.forRoot(appRoutes, {
-            initialNavigation: 'enabled'
-        }),
-        CarouselModule.forRoot(),
-        provideFirebaseApp(() => initializeApp(environment.firebase)),
-        provideAnalytics(() => getAnalytics()),
-        provideDatabase(() => getDatabase()),
-        provideFirestore(() => getFirestore()),
-        provideMessaging(() => getMessaging()),
-        providePerformance(() => getPerformance()),
-        provideRemoteConfig(() => getRemoteConfig()),
-        provideStorage(() => getStorage())
-    ],
-    providers: [
-    ],
-    bootstrap: [NavbarComponent, AppComponent, FooterComponent]
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    LandingComponent,
+    AboutMeComponent,
+    ContactComponent,
+    PageAnimationComponent,
+    AskVoidComponent,
+    TermsAndAgreementComponent,
+    NomenclatureComponent,
+    NamesComponent,
+    HaecceityComponent,
+    NomenclatureLandingComponent,
+    HaecceityLandingComponent,
+    NamesLandingComponent,
+    AskNamerCaseStudyComponent,
+    AskNamerCaseStudyLandingComponent,
+    TestimonialsComponent,
+    ContactLandingComponent,
+    BlogsComponent,
+    BlogWhatsInABrandNameComponent,
+    FactsAboutSoundSymbolismComponent,
+    CaseStudyTemplateComponent,
+    CaseStudyPetroxiComponent,
+  ],
+  imports: [
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes, {
+      initialNavigation: 'enabled'
+    }),
+    CarouselModule.forRoot(),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAnalytics(() => getAnalytics()),
+    provideDatabase(() => getDatabase()),
+    provideFirestore(() => getFirestore()),
+    provideMessaging(() => getMessaging()),
+    providePerformance(() => getPerformance()),
+    provideRemoteConfig(() => getRemoteConfig()),
+    provideStorage(() => getStorage())
+  ],
+  providers: [
+  ],
+  bootstrap: [NavbarComponent, AppComponent, FooterComponent]
 })
 
 export class AppModule { }
