@@ -223,6 +223,10 @@
     right: 2rem;
   }
 
+  .nav-close-container {
+    top: 0.45rem;
+  }
+
   .nav-toggle {
     width: 3rem;
     height: 3rem;
