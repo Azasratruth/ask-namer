@@ -2,14 +2,22 @@
   align-items: flex-start;
 }
 
+.w-to-b-text {
+  box-shadow: 0 0 7px 0 rgba(240, 240, 240, 0.8);
+  padding-right: 5px;
+}
+
 .w-to-dg-text {
   background-color: rgba(20, 85, 85, 0.9);
+  padding-right: 4px;
+}
+
+.w-to-g-text {
+  background-color: lightslategray;
+  padding-right: 4px;
 }
 
 .w-to-beige-text {
   background-color: rgba(210, 192, 157, 0.9);
-}
-
-.w-to-o-text {
-  background-color: lightslategray;
+  padding-right: 5px;
 }

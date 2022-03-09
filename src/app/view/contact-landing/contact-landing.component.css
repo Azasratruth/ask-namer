@@ -1,4 +1,9 @@
 .generic-cont {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
   background-color: rgba(6, 8, 8, 0.9);
   box-shadow: 0 0 10px 5px rgba(6, 8, 8, 0.9);
 }
@@ -24,6 +29,8 @@
   padding-bottom: 5px;
   padding-left: 12px;
   padding-right: 11px;
+
+  box-shadow: 0 0 14px 0 rgba(240, 240, 240, 0.8);
 }
 
 .br-sm {
