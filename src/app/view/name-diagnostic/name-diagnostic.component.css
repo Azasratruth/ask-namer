@@ -1,0 +1,15 @@
+.generic-cont {
+  align-items: flex-start;
+}
+
+.w-to-dg-text {
+  background-color: rgba(20, 85, 85, 0.9);
+}
+
+.w-to-beige-text {
+  background-color: rgba(210, 192, 157, 0.9);
+}
+
+.w-to-o-text {
+  background-color: lightslategray;
+}

@@ -44,6 +44,8 @@ import { CaseStudyAviriBComponent } from './view/case-study-aviri-b/case-study-a
 import { CaseStudyNinetyDegreesNormalComponent } from './view/case-study-ninety-degrees-normal/case-study-ninety-degrees-normal.component';
 import { CaseStudyPlethoraComponent } from './view/case-study-plethora/case-study-plethora.component';
 import { ProjectsWithAgenciesComponent } from './view/projects-with-agencies/projects-with-agencies.component';
+import { NameDiagnosticComponent } from './view/name-diagnostic/name-diagnostic.component';
+import { NameDiagnosticLandingComponent } from './view/name-diagnostic-landing/name-diagnostic-landing.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingComponent },
@@ -63,6 +65,7 @@ const appRoutes: Routes = [
   { path: 'case-study/aviri-b', component: CaseStudyAviriBComponent },
   { path: 'case-study/90-degrees-normal', component: CaseStudyNinetyDegreesNormalComponent },
   { path: 'case-study/plethora', component: CaseStudyPlethoraComponent },
+  { path: 'a', component: NameDiagnosticComponent },
 ];
 
 
@@ -98,6 +101,8 @@ const appRoutes: Routes = [
     CaseStudyNinetyDegreesNormalComponent,
     CaseStudyPlethoraComponent,
     ProjectsWithAgenciesComponent,
+    NameDiagnosticComponent,
+    NameDiagnosticLandingComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
