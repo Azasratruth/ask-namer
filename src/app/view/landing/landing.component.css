@@ -14,11 +14,12 @@
   height: 4rem;
 
   content: "";
-  background-image: url('/assets/images/bg/pawel-czerwinski-VOe1u5aCeIo-unsplash-turned.jpg');
+  background-image: url('/assets/images/bg/alina-grubnyak-ZiQkhI7417A-unsplash-crop-top.jpg');
   background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
   position: absolute;
-  top: -6.5rem;
+  top: -6rem;
   right: 0px;
   bottom: 0px;
   left: 0px;

@@ -31,17 +31,5 @@ export class LandingComponent implements OnInit {
 
   private openingAnimation() {
     gsap.to(window, { duration: 0, scrollTo: 0 });
-
-    var revamp = gsap.timeline();
-
-    revamp.from('.revamp', {
-      y: -50,
-      delay: 1,
-      duration: 1.5,
-      opacity: 0,
-      ease: "expo.out"
-    });
-
-    var tl = gsap.timeline();
   }
 }
