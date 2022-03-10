@@ -16,9 +16,9 @@ export class LandingComponent implements OnInit {
     private titleService: Title,
     private metaTagService: Meta,
   ) {
-    this.titleService.setTitle('Ask Namer | Naming Agency | 7x More Memorable Names | Haecceity');
+    this.titleService.setTitle('Ask Namer | Leading Research-Based Naming Agency');
     this.metaTagService.addTags([
-      { name: 'description', content: 'We make your brand, startup, product name up to 7 times more memorable than a normal name, providing it a lifelong advantage.' },
+      { name: 'description', content: 'Ask Namer creates memorable, evocative, and engaging names for companies, brands, and products.' },
       { name: 'keywords', content: 'brand name, startup name, business name, naming agency, branding' },
     ]);
   }
