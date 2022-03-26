@@ -45,6 +45,7 @@ import { CaseStudyNinetyDegreesNormalComponent } from './view/case-study-ninety-
 import { CaseStudyPlethoraComponent } from './view/case-study-plethora/case-study-plethora.component';
 import { ProjectsWithAgenciesComponent } from './view/projects-with-agencies/projects-with-agencies.component';
 import { NameDiagnosticComponent } from './view/name-diagnostic/name-diagnostic.component';
+import { PartnersLandingComponent } from './view/partners-landing/partners-landing.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingComponent },
@@ -100,6 +101,7 @@ const appRoutes: Routes = [
     CaseStudyPlethoraComponent,
     ProjectsWithAgenciesComponent,
     NameDiagnosticComponent,
+    PartnersLandingComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
