@@ -50,6 +50,7 @@ import { BackButtonForBlogsComponent } from './view/back-button-for-blogs/back-b
 import { BackButtonForNamesComponent } from './view/back-button-for-names/back-button-for-names.component';
 import { AuDirectDomainComponent } from './view/blogs/au-direct-domain/au-direct-domain.component';
 import { PakPmoYoutubeChannelRenamedImranKhanComponent } from './view/blogs/pak-pmo-youtube-channel-renamed-imran-khan/pak-pmo-youtube-channel-renamed-imran-khan.component';
+import { ICantAffordANamingAgencyAndWantANameQuicklyComponent } from './view/blogs/i-cant-afford-a-naming-agency-and-want-a-name-quickly/i-cant-afford-a-naming-agency-and-want-a-name-quickly.component';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
@@ -65,6 +66,7 @@ const appRoutes: Routes = [
     { path: 'insights/the-sound-of-success-how-brands-can-benefit-from-phonetics', component: FactsAboutSoundSymbolismComponent },
     { path: 'insights/au-direct-domain', component: AuDirectDomainComponent },
     { path: 'insights/pak-pmo-youtube-channel-renamed-to-imran-khan', component: PakPmoYoutubeChannelRenamedImranKhanComponent },
+    { path: 'insights/i-cant-afford-a-naming-agency-and-want-a-name-quickly', component: ICantAffordANamingAgencyAndWantANameQuicklyComponent },
     { path: 'case-study/petroxi', component: CaseStudyPetroxiComponent },
     { path: 'case-study/served-today', component: CaseStudyServedTodayComponent },
     { path: 'case-study/duft-und-du', component: CaseStudyDuftUndDuComponent },
@@ -112,6 +114,7 @@ const appRoutes: Routes = [
         BackButtonForNamesComponent,
         AuDirectDomainComponent,
         PakPmoYoutubeChannelRenamedImranKhanComponent,
+        ICantAffordANamingAgencyAndWantANameQuicklyComponent,
     ],
     imports: [
         BrowserModule.withServerTransition({ appId: 'serverApp' }),

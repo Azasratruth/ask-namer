@@ -8,19 +8,22 @@
 
     <h1 class="gen-title text">Insights</h1>
 
-    <div class="link-blog" (mouseleave)="linkHoverOff('#whats-in-a-name')">
-        <a class="link-blog" [routerLink]="['/insights/whats-in-a-brand-name']">
+    <!-- Pak PMO Youtube Rename -->
+    <div class="link-blog" (mouseleave)="linkHoverOff('#pak-pmo-youtube-rename')">
+        <a class="link-blog" [routerLink]="['/insights/pak-pmo-youtube-channel-renamed-to-imran-khan']">
 
-            <div class="gen-body blog" id="whats-in-a-name" (mouseenter)="linkHoverOn('#whats-in-a-name')">
+            <div class="gen-body blog" id="pak-pmo-youtube-rename"
+                (mouseenter)="linkHoverOn('#pak-pmo-youtube-rename')">
 
-                <img class="img" src="/assets/images/blogs/braydon-anderson-wOHH-NUTvVc-unsplash-comp-sq.jpg"
-                    alt="a dog looking like an intellectual with a big fake nose and big glasses" />
+                <img class="img" id="pak-pmo-youtube-rename-image" src="/assets/images/blogs/imran-khan-youtube.png"
+                    alt="imran khan youtube" />
                 <br>
 
                 <div class="hor">
-                    <h2 class="head text">What's in a brand name?</h2><br>
-                    <p class="gen-subtitle text">Brand names can be more than just unique and meaningful. There are
-                        different values/qualities that you can have in a brand name.
+                    <h2 class="head text">Renaming of Pak PMO’s YouTube channel to Imran Khan</h2><br>
+                    <p class="gen-subtitle text">
+                        Recently, the YouTube channel of the Pakistan’s Prime Minister's Office (PMO) was renamed to
+                        Imran Khan...
                     </p>
                 </div>
 
@@ -29,26 +32,7 @@
         </a>
     </div>
 
-    <div class="link-blog" (mouseleave)="linkHoverOff('#facts-brand-names')">
-        <a class="link-blog" [routerLink]="['/insights/the-sound-of-success-how-brands-can-benefit-from-phonetics']">
-
-            <div class="gen-body blog" id="facts-brand-names" (mouseenter)="linkHoverOn('#facts-brand-names')">
-
-                <img class="img" id="apple" src="/assets/images/blogs/word-art-sq.png"
-                    alt="a word cloud of the words used in the blog, arranged in the shape of an apple" />
-                <br>
-
-                <div class="hor">
-                    <h2 class="head text">The Sound Of Success: How Brands Can Benefit From Phonetics</h2>
-                    <br>
-                    <p class="gen-subtitle text">Research shows that brands labeled with proper phonetics are 65% better
-                        perceived</p>
-                </div>
-
-            </div>
-        </a>
-    </div>
-
+    <!-- au Direct Domain -->
     <div class="link-blog" (mouseleave)="linkHoverOff('#au-direct-domain')">
         <a class="link-blog" [routerLink]="['/insights/au-direct-domain']">
 
@@ -70,26 +54,71 @@
         </a>
     </div>
 
-    <div class="link-blog" (mouseleave)="linkHoverOff('#pak-pmo-youtube-rename')">
-        <a class="link-blog" [routerLink]="['/insights/pak-pmo-youtube-channel-renamed-to-imran-khan']">
+    <!-- Name Generators -->
+    <div class="link-blog" (mouseleave)="linkHoverOff('#name-generators')">
+        <a class="link-blog" [routerLink]="['/insights/i-cant-afford-a-naming-agency-and-want-a-name-quickly']">
 
-            <div class="gen-body blog" id="pak-pmo-youtube-rename"
-                (mouseenter)="linkHoverOn('#pak-pmo-youtube-rename')">
+            <div class="gen-body blog" id="name-generators" (mouseenter)="linkHoverOn('#name-generators')">
 
-                <img class="img" id="pak-pmo-youtube-rename-image" src="/assets/images/blogs/imran-khan-youtube.png"
-                    alt="imran khan youtube" />
+                <img class="img" id="name-generators-img" src="/assets/images/blogs/name-generator.png"
+                    alt="name generator in text" />
                 <br>
 
                 <div class="hor">
-                    <h2 class="head text">Renaming of Pak PMO’s YouTube channel to Imran Khan</h2><br>
+                    <h2 class="head text">
+                        I can’t afford a naming agency and want a name for my business quickly
+                    </h2>
+                    <br>
                     <p class="gen-subtitle text">
-                        Recently, the YouTube channel of the Pakistan’s Prime Minister's Office (PMO) was renamed to
-                        Imran Khan...
+                        Simple answer – Name Generators
                     </p>
                 </div>
 
             </div>
 
+        </a>
+    </div>
+
+    <!-- What's in a name -->
+    <div class="link-blog" (mouseleave)="linkHoverOff('#whats-in-a-name')">
+        <a class="link-blog" [routerLink]="['/insights/whats-in-a-brand-name']">
+
+            <div class="gen-body blog" id="whats-in-a-name" (mouseenter)="linkHoverOn('#whats-in-a-name')">
+
+                <img class="img" src="/assets/images/blogs/braydon-anderson-wOHH-NUTvVc-unsplash-comp-sq.jpg"
+                    alt="a dog looking like an intellectual with a big fake nose and big glasses" />
+                <br>
+
+                <div class="hor">
+                    <h2 class="head text">What's in a brand name?</h2><br>
+                    <p class="gen-subtitle text">Brand names can be more than just unique and meaningful. There are
+                        different values/qualities that you can have in a brand name.
+                    </p>
+                </div>
+
+            </div>
+
+        </a>
+    </div>
+
+    <!-- Facts about brand names -->
+    <div class="link-blog" (mouseleave)="linkHoverOff('#facts-brand-names')">
+        <a class="link-blog" [routerLink]="['/insights/the-sound-of-success-how-brands-can-benefit-from-phonetics']">
+
+            <div class="gen-body blog" id="facts-brand-names" (mouseenter)="linkHoverOn('#facts-brand-names')">
+
+                <img class="img" id="apple" src="/assets/images/blogs/word-art-sq.png"
+                    alt="a word cloud of the words used in the blog, arranged in the shape of an apple" />
+                <br>
+
+                <div class="hor">
+                    <h2 class="head text">The Sound Of Success: How Brands Can Benefit From Phonetics</h2>
+                    <br>
+                    <p class="gen-subtitle text">Research shows that brands labeled with proper phonetics are 65% better
+                        perceived</p>
+                </div>
+
+            </div>
         </a>
     </div>
 

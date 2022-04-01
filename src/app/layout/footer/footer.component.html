@@ -4,17 +4,22 @@
     <div class="flex-container">
 
         <h4 class="flex-column text" id="home" (mouseenter)="linkHoverOn('#home')" (mouseout)="linkHoverOff('#home')">
-            <a class="custom-link" [routerLink]="['']">Home</a>
+            <a class="custom-link" [routerLink]="['/']">Home</a>
         </h4>
 
         <h4 class="flex-column text" id="connect" (mouseenter)="linkHoverOn('#connect')"
             (mouseout)="linkHoverOff('#connect')">
-            <a class="custom-link" [routerLink]="['connect']">Connect</a>
+            <a class="custom-link" [routerLink]="['/connect']">Connect</a>
         </h4>
 
         <h4 class="flex-column text" id="about-us" (mouseenter)="linkHoverOn('#about-us')"
             (mouseout)="linkHoverOff('#about-us')">
-            <a class="custom-link" [routerLink]="['about-us']">About Us</a>
+            <a class="custom-link" [routerLink]="['/about-us']">About Us</a>
+        </h4>
+
+        <h4 class="flex-column text" id="insights" (mouseenter)="linkHoverOn('#insights')"
+            (mouseout)="linkHoverOff('#insights')">
+            <a class="custom-link" [routerLink]="['/insights']">Insights</a>
         </h4>
 
         <h4 class="flex-column text" id="linkedin" (mouseenter)="linkHoverOn('#linkedin')"
