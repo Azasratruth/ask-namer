@@ -4,7 +4,7 @@ import { Meta, Title } from '@angular/platform-browser';
 @Component({
     selector: 'app-blog-whats-in-a-brand-name',
     templateUrl: './blog-whats-in-a-brand-name.component.html',
-    styleUrls: ['./blog-whats-in-a-brand-name.component.css']
+    styleUrls: ['./blog-whats-in-a-brand-name.component.css, ./../../../blog.css']
 })
 export class BlogWhatsInABrandNameComponent implements OnInit {
 
