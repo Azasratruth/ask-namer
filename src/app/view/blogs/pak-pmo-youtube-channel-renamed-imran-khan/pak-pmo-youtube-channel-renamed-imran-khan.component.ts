@@ -12,9 +12,9 @@ export class PakPmoYoutubeChannelRenamedImranKhanComponent implements OnInit {
         private titleService: Title,
         private metaTagService: Meta,
     ) {
-        this.titleService.setTitle("The Sound Of Success: How Brands Can Benefit From Phonetics | Insights | Ask Namer");
+        this.titleService.setTitle("Renaming of Pak PMO’s YouTube channel to Imran Khan | Insights | Ask Namer");
         this.metaTagService.addTags([
-            { name: 'description', content: 'Research shows that brands labelled with proper phonetics are better perceived by 65%.' },
+            { name: 'description', content: "Recently, the YouTube channel of the Pakistan’s Prime Minister's Office (PMO) was renamed to Imran Khan..." },
         ]);
     }
 

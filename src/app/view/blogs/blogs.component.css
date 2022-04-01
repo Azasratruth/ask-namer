@@ -29,6 +29,10 @@
   background-color: #f0f0f0;
 }
 
+#pak-pmo-youtube-rename-image {
+  object-fit: contain;
+  object-position: left;
+}
 
 
 /* For large screens */
