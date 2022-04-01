@@ -12,7 +12,7 @@ export class BlogWhatsInABrandNameComponent implements OnInit {
         private titleService: Title,
         private metaTagService: Meta,
     ) {
-        this.titleService.setTitle("What's in a brand name? | Brief Blogs | Ask Namer");
+        this.titleService.setTitle("What's in a brand name? | Insights | Ask Namer");
         this.metaTagService.addTags([
             { name: 'description', content: 'Brand names can be more than just unique and meaningful. There are different values/qualities that you can have in a brand name.' },
         ]);

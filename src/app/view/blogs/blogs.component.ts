@@ -13,11 +13,11 @@ export class BlogsComponent implements OnInit {
         private titleService: Title,
         private metaTagService: Meta,
     ) {
-        this.titleService.setTitle('Brief Blogs | Ask Namer');
+        this.titleService.setTitle('Insights | Ask Namer');
         this.metaTagService.addTags([
             { name: 'description', content: "What's in a name? Facts About Brand Names. Power of Phonetics." },
         ]);
-     }
+    }
 
     ngOnInit(): void { }
 

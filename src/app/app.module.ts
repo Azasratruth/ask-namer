@@ -46,6 +46,8 @@ import { CaseStudyPlethoraComponent } from './view/case-study-plethora/case-stud
 import { ProjectsWithAgenciesComponent } from './view/projects-with-agencies/projects-with-agencies.component';
 import { NameDiagnosticComponent } from './view/name-diagnostic/name-diagnostic.component';
 import { PartnersLandingComponent } from './view/partners-landing/partners-landing.component';
+import { BackButtonForBlogsComponent } from './view/back-button-for-blogs/back-button-for-blogs.component';
+import { BackButtonForNamesComponent } from './view/back-button-for-names/back-button-for-names.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingComponent },
@@ -102,6 +104,8 @@ const appRoutes: Routes = [
     ProjectsWithAgenciesComponent,
     NameDiagnosticComponent,
     PartnersLandingComponent,
+    BackButtonForBlogsComponent,
+    BackButtonForNamesComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
