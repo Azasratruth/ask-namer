@@ -28,13 +28,10 @@ body {
   font-weight: 200;
 }
 
+/* Text color difference */
 .text {
-  /* Text color difference */
   color: white;
   mix-blend-mode: difference;
-
-  /* filter: invert(1) contrast(1);
-        -webkit-filter: invert(1) contrast(1); */
 }
 
 
@@ -192,7 +189,6 @@ body {
 .w-to-p-text {
   background-color: rgba(250, 100, 250, 0.9);
 }
-
 
 
 /* End - Name and Case Study components */
