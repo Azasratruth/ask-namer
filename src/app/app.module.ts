@@ -34,8 +34,8 @@ import { providePerformance, getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig, getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage, getStorage } from '@angular/fire/storage';
 import { BlogsComponent } from './view/blogs/blogs.component';
-import { BlogWhatsInABrandNameComponent } from './view/blog-whats-in-a-brand-name/blog-whats-in-a-brand-name.component';
-import { FactsAboutSoundSymbolismComponent } from './view/facts-about-sound-symbolism/facts-about-sound-symbolism.component';
+import { BlogWhatsInABrandNameComponent } from './view/blogs/blog-whats-in-a-brand-name/blog-whats-in-a-brand-name.component';
+import { FactsAboutSoundSymbolismComponent } from './view/blogs/facts-about-sound-symbolism/facts-about-sound-symbolism.component';
 import { CaseStudyTemplateComponent } from './view/case-study-template/case-study-template.component';
 import { CaseStudyPetroxiComponent } from './view/case-study-petroxi/case-study-petroxi.component';
 import { CaseStudyServedTodayComponent } from './view/case-study-served-today/case-study-served-today.component';
@@ -48,7 +48,8 @@ import { NameDiagnosticComponent } from './view/name-diagnostic/name-diagnostic.
 import { PartnersLandingComponent } from './view/partners-landing/partners-landing.component';
 import { BackButtonForBlogsComponent } from './view/back-button-for-blogs/back-button-for-blogs.component';
 import { BackButtonForNamesComponent } from './view/back-button-for-names/back-button-for-names.component';
-import { AuDirectDomainComponent } from './view/au-direct-domain/au-direct-domain.component';
+import { AuDirectDomainComponent } from './view/blogs/au-direct-domain/au-direct-domain.component';
+import { PakPmoYoutubeChannelRenamedImranKhanComponent } from './view/blogs/pak-pmo-youtube-channel-renamed-imran-khan/pak-pmo-youtube-channel-renamed-imran-khan.component';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
@@ -63,6 +64,7 @@ const appRoutes: Routes = [
     { path: 'insights/whats-in-a-brand-name', component: BlogWhatsInABrandNameComponent },
     { path: 'insights/the-sound-of-success-how-brands-can-benefit-from-phonetics', component: FactsAboutSoundSymbolismComponent },
     { path: 'insights/au-direct-domain', component: AuDirectDomainComponent },
+    { path: 'insights/pak-pmo-youtube-channel-renamed-to-imran-khan', component: PakPmoYoutubeChannelRenamedImranKhanComponent },
     { path: 'case-study/petroxi', component: CaseStudyPetroxiComponent },
     { path: 'case-study/served-today', component: CaseStudyServedTodayComponent },
     { path: 'case-study/duft-und-du', component: CaseStudyDuftUndDuComponent },
@@ -109,6 +111,7 @@ const appRoutes: Routes = [
         BackButtonForBlogsComponent,
         BackButtonForNamesComponent,
         AuDirectDomainComponent,
+        PakPmoYoutubeChannelRenamedImranKhanComponent,
     ],
     imports: [
         BrowserModule.withServerTransition({ appId: 'serverApp' }),

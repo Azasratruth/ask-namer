@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
-    selector: 'app-facts-about-sound-symbolism',
-    templateUrl: './facts-about-sound-symbolism.component.html',
-    styleUrls: ['./facts-about-sound-symbolism.component.css, ./../../../blog.css']
+    selector: 'app-pak-pmo-youtube-channel-renamed-imran-khan',
+    templateUrl: './pak-pmo-youtube-channel-renamed-imran-khan.component.html',
+    styleUrls: ['./pak-pmo-youtube-channel-renamed-imran-khan.component.css, ./../../blog-template.css']
 })
-export class FactsAboutSoundSymbolismComponent implements OnInit {
+export class PakPmoYoutubeChannelRenamedImranKhanComponent implements OnInit {
 
     constructor(
         private titleService: Title,
