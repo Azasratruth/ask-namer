@@ -51,6 +51,7 @@ import { BackButtonForNamesComponent } from './view/back-button-for-names/back-b
 import { AuDirectDomainComponent } from './view/blogs/au-direct-domain/au-direct-domain.component';
 import { PakPmoYoutubeChannelRenamedImranKhanComponent } from './view/blogs/pak-pmo-youtube-channel-renamed-imran-khan/pak-pmo-youtube-channel-renamed-imran-khan.component';
 import { ICantAffordANamingAgencyAndWantANameQuicklyComponent } from './view/blogs/i-cant-afford-a-naming-agency-and-want-a-name-quickly/i-cant-afford-a-naming-agency-and-want-a-name-quickly.component';
+import { FaqComponent } from './view/faq/faq.component';
 
 const appRoutes: Routes = [
     { path: '', component: LandingComponent },
@@ -73,6 +74,7 @@ const appRoutes: Routes = [
     { path: 'case-study/aviri-b', component: CaseStudyAviriBComponent },
     { path: 'case-study/90-degrees-normal', component: CaseStudyNinetyDegreesNormalComponent },
     { path: 'case-study/plethora', component: CaseStudyPlethoraComponent },
+    { path: 'faq', component: FaqComponent },
 ];
 
 
@@ -115,6 +117,7 @@ const appRoutes: Routes = [
         AuDirectDomainComponent,
         PakPmoYoutubeChannelRenamedImranKhanComponent,
         ICantAffordANamingAgencyAndWantANameQuicklyComponent,
+        FaqComponent,
     ],
     imports: [
         BrowserModule.withServerTransition({ appId: 'serverApp' }),

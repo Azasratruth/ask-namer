@@ -4,7 +4,7 @@ import { Meta, Title } from '@angular/platform-browser';
 @Component({
     selector: 'app-au-direct-domain',
     templateUrl: './au-direct-domain.component.html',
-    styleUrls: ['./au-direct-domain.component.css, ./../../blog-template.css']
+    styleUrls: ['./au-direct-domain.component.css', './../blog-template.css']
 })
 export class AuDirectDomainComponent implements OnInit {
 

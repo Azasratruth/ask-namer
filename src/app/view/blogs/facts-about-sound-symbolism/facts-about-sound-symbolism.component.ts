@@ -4,7 +4,7 @@ import { Meta, Title } from '@angular/platform-browser';
 @Component({
     selector: 'app-facts-about-sound-symbolism',
     templateUrl: './facts-about-sound-symbolism.component.html',
-    styleUrls: ['./facts-about-sound-symbolism.component.css, ./../../blog-template.css']
+    styleUrls: ['./facts-about-sound-symbolism.component.css', './../blog-template.css']
 })
 export class FactsAboutSoundSymbolismComponent implements OnInit {
 

@@ -3,32 +3,49 @@
 <div class="custom-footer">
     <div class="flex-container">
 
-        <h4 class="flex-column text" id="home" (mouseenter)="linkHoverOn('#home')" (mouseout)="linkHoverOff('#home')">
-            <a class="custom-link" [routerLink]="['/']">Home</a>
-        </h4>
+        <div class="flex-item">
+            <h4 class="flex-inside text" id="home" (mouseenter)="linkHoverOn('#home')"
+                (mouseout)="linkHoverOff('#home')">
+                <a class="custom-link" [routerLink]="['/']">Home</a>
+            </h4>
+        </div>
 
-        <h4 class="flex-column text" id="connect" (mouseenter)="linkHoverOn('#connect')"
-            (mouseout)="linkHoverOff('#connect')">
-            <a class="custom-link" [routerLink]="['/connect']">Connect</a>
-        </h4>
+        <div class="flex-item">
+            <h4 class="flex-inside text" id="connect" (mouseenter)="linkHoverOn('#connect')"
+                (mouseout)="linkHoverOff('#connect')">
+                <a class="custom-link" [routerLink]="['/connect']">Connect</a>
+            </h4>
+        </div>
 
-        <h4 class="flex-column text" id="about-us" (mouseenter)="linkHoverOn('#about-us')"
-            (mouseout)="linkHoverOff('#about-us')">
-            <a class="custom-link" [routerLink]="['/about-us']">About Us</a>
-        </h4>
+        <div class="flex-item">
+            <h4 class="flex-inside text" id="about-us" (mouseenter)="linkHoverOn('#about-us')"
+                (mouseout)="linkHoverOff('#about-us')">
+                <a class="custom-link" [routerLink]="['/about-us']">About Us</a>
+            </h4>
+        </div>
 
-        <h4 class="flex-column text" id="insights" (mouseenter)="linkHoverOn('#insights')"
-            (mouseout)="linkHoverOff('#insights')">
-            <a class="custom-link" [routerLink]="['/insights']">Insights</a>
-        </h4>
+        <div class="flex-item">
+            <h4 class="flex-inside text" id="insights" (mouseenter)="linkHoverOn('#insights')"
+                (mouseout)="linkHoverOff('#insights')">
+                <a class="custom-link" [routerLink]="['/insights']">Insights</a>
+            </h4>
+        </div>
 
-        <h4 class="flex-column text" id="linkedin" (mouseenter)="linkHoverOn('#linkedin')"
-            (mouseout)="linkHoverOff('#linkedin')">
-            <a class="custom-link" target="_blank" href="https://www.linkedin.com/company/asknamer/" rel="noopener">
-                LinkedIn
-                <span class="rotate">→</span>
-            </a>
-        </h4>
+        <div class="flex-item">
+            <h4 class="flex-inside text" id="faq" (mouseenter)="linkHoverOn('#faq')" (mouseout)="linkHoverOff('#faq')">
+                <a class="custom-link" [routerLink]="['/faq']">FAQ</a>
+            </h4>
+        </div>
+
+        <div class="flex-item">
+            <h4 class="flex-inside text" id="linkedin" (mouseenter)="linkHoverOn('#linkedin')"
+                (mouseout)="linkHoverOff('#linkedin')">
+                <a class="custom-link" target="_blank" href="https://www.linkedin.com/company/asknamer/" rel="noopener">
+                    LinkedIn
+                    <span class="rotate">→</span>
+                </a>
+            </h4>
+        </div>
 
     </div>
 </div>

@@ -4,7 +4,7 @@ import { Meta, Title } from '@angular/platform-browser';
 @Component({
     selector: 'app-i-cant-afford-a-naming-agency-and-want-a-name-quickly',
     templateUrl: './i-cant-afford-a-naming-agency-and-want-a-name-quickly.component.html',
-    styleUrls: ['./i-cant-afford-a-naming-agency-and-want-a-name-quickly.component.css, ./../../blog-template.css']
+    styleUrls: ['./i-cant-afford-a-naming-agency-and-want-a-name-quickly.component.css', './../blog-template.css']
 })
 export class ICantAffordANamingAgencyAndWantANameQuicklyComponent implements OnInit {
 
