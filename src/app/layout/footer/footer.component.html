@@ -1,69 +1,71 @@
 <div class="gap"></div>
 
 <div class="custom-footer">
-    <div class="flex-container">
+	<div class="flex-container">
 
-        <div class="flex-item">
-            <h4 class="flex-inside text" id="home" (mouseenter)="linkHoverOn('#home')"
-                (mouseout)="linkHoverOff('#home')">
-                <a class="custom-link" [routerLink]="['/']">Home</a>
-            </h4>
-        </div>
+		<div class="flex-item">
+			<h4 class="flex-inside" id="home" (mouseenter)="linkHoverOn('#home', '#home-t')"
+				(mouseout)="linkHoverOff('#home', '#home-t')">
+				<a class="foo-text custom-foo-link" id="home-t" [routerLink]="['/']">Home</a>
+			</h4>
+		</div>
 
-        <div class="flex-item">
-            <h4 class="flex-inside text" id="connect" (mouseenter)="linkHoverOn('#connect')"
-                (mouseout)="linkHoverOff('#connect')">
-                <a class="custom-link" [routerLink]="['/connect']">Connect</a>
-            </h4>
-        </div>
+		<div class="flex-item">
+			<h4 class="flex-inside" id="connect" (mouseenter)="linkHoverOn('#connect', '#connect-t')"
+				(mouseout)="linkHoverOff('#connect', '#connect-t')">
+				<a class="foo-text custom-foo-link" id="connect-t" [routerLink]="['/connect']">Connect</a>
+			</h4>
+		</div>
 
-        <div class="flex-item">
-            <h4 class="flex-inside text" id="about-us" (mouseenter)="linkHoverOn('#about-us')"
-                (mouseout)="linkHoverOff('#about-us')">
-                <a class="custom-link" [routerLink]="['/about-us']">About Us</a>
-            </h4>
-        </div>
+		<div class="flex-item">
+			<h4 class="flex-inside" id="about-us" (mouseenter)="linkHoverOn('#about-us', '#about-us-t')"
+				(mouseout)="linkHoverOff('#about-us', '#about-us-t')">
+				<a class="foo-text custom-foo-link" id="about-us-t" [routerLink]="['/about-us']">About Us</a>
+			</h4>
+		</div>
 
-        <div class="flex-item">
-            <h4 class="flex-inside text" id="insights" (mouseenter)="linkHoverOn('#insights')"
-                (mouseout)="linkHoverOff('#insights')">
-                <a class="custom-link" [routerLink]="['/insights']">Insights</a>
-            </h4>
-        </div>
+		<div class="flex-item">
+			<h4 class="flex-inside" id="insights" (mouseenter)="linkHoverOn('#insights', '#insights-t')"
+				(mouseout)="linkHoverOff('#insights', '#insights-t')">
+				<a class="foo-text custom-foo-link" id="insights-t" [routerLink]="['/insights']">Insights</a>
+			</h4>
+		</div>
 
-        <div class="flex-item">
-            <h4 class="flex-inside text" id="faq" (mouseenter)="linkHoverOn('#faq')" (mouseout)="linkHoverOff('#faq')">
-                <a class="custom-link" [routerLink]="['/faq']">FAQ</a>
-            </h4>
-        </div>
+		<div class="flex-item">
+			<h4 class="flex-inside" id="faq" (mouseenter)="linkHoverOn('#faq', '#faq-t')"
+				(mouseout)="linkHoverOff('#faq', '#faq-t')">
+				<a class="foo-text custom-foo-link" id="faq-t" [routerLink]="['/faq']">FAQ</a>
+			</h4>
+		</div>
 
-        <div class="flex-item">
-            <h4 class="flex-inside text" id="linkedin" (mouseenter)="linkHoverOn('#linkedin')"
-                (mouseout)="linkHoverOff('#linkedin')">
-                <a class="custom-link" target="_blank" href="https://www.linkedin.com/company/asknamer/" rel="noopener">
-                    LinkedIn
-                    <span class="rotate">→</span>
-                </a>
-            </h4>
-        </div>
+		<div class="flex-item">
+			<h4 class="flex-inside" id="linkedin" (mouseenter)="linkHoverOn('#linkedin', '#linkedin-t')"
+				(mouseout)="linkHoverOff('#linkedin', '#linkedin-t')">
+				<a class="foo-text custom-foo-link" id="linkedin-t" target="_blank"
+					href="https://www.linkedin.com/company/asknamer/" rel="noopener">
+					LinkedIn
+					<span class="rotate">→</span>
+				</a>
+			</h4>
+		</div>
 
-    </div>
+	</div>
 </div>
 
 <div class="custom-footer-bottom">
 
-    <p class="cfb-text email">
-        <a class="custom-link"
-            href="mailto:hi@asknamer.com?&body=Name: %0D%0ACountry, City/State: %0D%0AQuery: %0D%0A%0D%0A">
-            hi@asknamer.com
-        </a>
-    </p>
+	<p class="cfb-text email">
+		<a class="custom-foo-link"
+			href="mailto:hi@asknamer.com?&body=Name: %0D%0ACountry, City/State: %0D%0AQuery: %0D%0A%0D%0A">
+			hi@asknamer.com
+		</a>
+	</p>
 
-    <p class="cfb-text loc">
-        R80, Malir, Shahrah e Faisal, Karachi
-    </p>
+	<p class="cfb-text loc">
+		R80, Malir, Shahrah e Faisal, Karachi
+	</p>
 
-    <p class="cfb-text rights">
-        © 2022 Ask Namer - All Rights Reserved
-    </p>
+	<p class="cfb-text rights">
+		© 2022 Ask Namer - All Rights Reserved
+	</p>
 </div>
