@@ -158,6 +158,10 @@ body {
 	content: ' \2B9C';
 }
 
+.forward-button::after {
+	content: ' \2B9E';
+}
+
 /* Generic Container End */
 
 
@@ -207,6 +211,9 @@ body {
 	background-color: rgba(250, 100, 250, 0.9);
 }
 
+.w-to-c-text {
+	background-color: rgba(0, 139, 139, 0.9);
+}
 
 /* End - Name and Case Study components */
 
