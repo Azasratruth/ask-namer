@@ -1,154 +1,162 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --less-fake-white: rgb(250, 250, 250, 0.7);
-  --fake-white: rgb(250, 250, 250, 0.6);
+	--less-fake-white: rgb(250, 250, 250, 0.7);
+	--fake-white: rgb(250, 250, 250, 0.6);
 
-  --lux-black: rgb(34, 34, 34);
-  --block-black: rgb(12, 12, 12);
-  --moving-block-black: rgb(7, 7, 7);
-  --always-moving-block-black: rgba(8, 8, 12, 0.9);
+	--lux-black: rgb(34, 34, 34);
+	--block-black: rgb(12, 12, 12);
+	--moving-block-black: rgb(7, 7, 7);
+	--always-moving-block-black: rgba(8, 8, 12, 0.9);
 }
 
 html,
 body {
-  margin: 0 !important;
-  padding: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 .view {
-  position: relative;
-  min-height: calc(100vh - 536px);
+	position: relative;
+	min-height: calc(100vh - 536px);
 }
 
 .text,
 .text-light,
 .text-dark {
-  font-family: 'Nunito', sans-serif;
-  letter-spacing: 3px;
-  font-weight: 200;
+	font-family: 'Nunito', sans-serif;
+	letter-spacing: 3px;
+	font-weight: 200;
 }
 
 /* Text color difference */
 .text {
-  color: white;
-  mix-blend-mode: difference;
+	color: white;
+	mix-blend-mode: difference;
 }
 
 
 /* For flipping cards */
 .text-light {
-  color: white;
+	color: white;
 }
 
 /* For lighter bgs */
 .text-dark {
-  color: #212529;
+	color: #212529;
 }
 
 /* Links */
 .custom-link,
 .custom-link:hover {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 .custom-link-no-color {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-color: white;
+	color: inherit;
+	text-decoration: underline;
+	text-decoration-color: white;
 }
 
 .custom-link-no-color:hover {
-  color: white;
-  text-decoration: underline;
-  text-decoration-color: white;
+	color: white;
+	text-decoration: underline;
+	text-decoration-color: white;
+}
+
+.under-line {
+	border-bottom: 1px solid white;
+}
+
+.head-mar-bot {
+	margin-bottom: 18px;
 }
 
 /* Links End */
 
-.under-line {
-  border-bottom: 1px solid white;
-}
 
 .gap {
-  display: flex;
-  margin: 2rem;
+	display: flex;
+	margin: 2rem;
 }
 
 .gap-block {
-  display: inline-block;
-  padding: 2rem;
+	display: inline-block;
+	padding: 2rem;
 }
 
 .an-title {
-  font-size: 2.5rem;
-  font-weight: 300;
+	font-size: 2.5rem;
+	font-weight: 300;
 }
 
 .desc {
-  font-size: 1.8rem;
+	font-size: 1.8rem;
 }
 
 /* actual-to-seo */
 .p-to-h1 {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 /* seo-to-actual */
 .h1-to-h4 {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 /* Generic Container */
 .generic-cont-l {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--always-moving-block-black);
+	display: flex;
+	flex-direction: column;
+	background-color: var(--always-moving-block-black);
 }
 
 .generic-cont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--always-moving-block-black);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--always-moving-block-black);
 }
 
 .generic-cont-blog {
-  background-color: #F5F5F5;
+	background-color: #F5F5F5;
 }
 
 
 .gen-title-margin {
-  margin: 0 2rem;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+	margin: 0 2rem;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
 }
 
 .head,
 .gen-title {
-  font-weight: 300;
-  font-variant: small-caps;
+	font-weight: 300;
+	font-variant: small-caps;
 }
 
 .gen-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-  margin: 1.7rem;
+	margin: 1.7rem;
 
-  text-align: center;
-  letter-spacing: 5px;
+	text-align: center;
+	letter-spacing: 5px;
 }
 
 .small-caps {
-  font-variant: small-caps;
+	font-variant: small-caps;
 }
 
 .body-shortened {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
+.back-button::after {
+	content: ' \2B9C';
+}
 
 /* Generic Container End */
 
@@ -156,47 +164,47 @@ body {
 /* Name and Case Study components */
 
 .op-black {
-  background-color: rgba(6, 8, 8, 0.9);
+	background-color: rgba(6, 8, 8, 0.9);
 }
 
 .head-body-avg {
-  display: inline-flex;
-  font-size: 1.8rem;
-  font-weight: 300;
+	display: inline-flex;
+	font-size: 1.8rem;
+	font-weight: 300;
 
-  background-color: white;
-  color: rgba(6, 6, 8, 0.9);
-  padding-top: 2px;
-  padding-left: 9px;
-  padding-right: 9px;
+	background-color: white;
+	color: rgba(6, 6, 8, 0.9);
+	padding-top: 2px;
+	padding-left: 9px;
+	padding-right: 9px;
 }
 
 .body-avg {
-  font-size: 1.3rem;
-  letter-spacing: 2.3;
+	font-size: 1.3rem;
+	letter-spacing: 2.3;
 }
 
 .highlight {
-  padding-left: 7px;
-  padding-right: 3px;
-  line-height: 1.3;
+	padding-left: 7px;
+	padding-right: 3px;
+	line-height: 1.3;
 }
 
 .highlight-italic {
-  padding-right: 8px;
+	padding-right: 8px;
 }
 
 .w-to-b-text {
-  background-color: white;
-  color: rgba(6, 6, 8, 0.9);
+	background-color: white;
+	color: rgba(6, 6, 8, 0.9);
 }
 
 .w-to-r-text {
-  background-color: rgba(250, 100, 100, 0.9);
+	background-color: rgba(250, 100, 100, 0.9);
 }
 
 .w-to-p-text {
-  background-color: rgba(250, 100, 250, 0.9);
+	background-color: rgba(250, 100, 250, 0.9);
 }
 
 
@@ -204,18 +212,18 @@ body {
 
 /* For small screens */
 @media (min-width: 450px) {
-  .gen-title-margin {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
+	.gen-title-margin {
+		margin-left: 4rem;
+		margin-right: 4rem;
+	}
 }
 
 /* For large screens */
 @media (min-width: 768px) {
 
-  .gen-title-margin,
-  .gen-body {
-    margin-left: 15vw;
-    margin-right: 15vw;
-  }
+	.gen-title-margin,
+	.gen-body {
+		margin-left: 15vw;
+		margin-right: 15vw;
+	}
 }
