@@ -39,6 +39,11 @@
 	box-shadow: 0px 0px 6px #0f0f0f;
 }
 
+#ared {
+	background-color: #0f0f0f;
+}
+
+
 /* For large screens */
 @media (min-width: 768px) {
 	.partner {
