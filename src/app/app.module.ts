@@ -53,6 +53,7 @@ import { PakPmoYoutubeChannelRenamedImranKhanComponent } from './view/blogs/pak-
 import { ICantAffordANamingAgencyAndWantANameQuicklyComponent } from './view/blogs/i-cant-afford-a-naming-agency-and-want-a-name-quickly/i-cant-afford-a-naming-agency-and-want-a-name-quickly.component';
 import { FaqComponent } from './view/faq/faq.component';
 import { FaqLandingComponent } from './view/faq-landing/faq-landing.component';
+import { NameEvaluationsComponent } from './view/name-evaluations/name-evaluations.component';
 
 const appRoutes: Routes = [
 	{ path: '', component: LandingComponent },
@@ -76,6 +77,7 @@ const appRoutes: Routes = [
 	{ path: 'case-study/90-degrees-normal', component: CaseStudyNinetyDegreesNormalComponent },
 	{ path: 'case-study/plethora', component: CaseStudyPlethoraComponent },
 	{ path: 'faq', component: FaqComponent },
+	{ path: 'name-evaluations', component: NameEvaluationsComponent },
 ];
 
 
@@ -120,6 +122,7 @@ const appRoutes: Routes = [
 		ICantAffordANamingAgencyAndWantANameQuicklyComponent,
 		FaqComponent,
 		FaqLandingComponent,
+		NameEvaluationsComponent,
 	],
 	imports: [
 		BrowserModule.withServerTransition({ appId: 'serverApp' }),

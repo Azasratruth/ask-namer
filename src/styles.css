@@ -154,14 +154,6 @@ body {
 	font-size: 1rem;
 }
 
-.back-button::after {
-	content: ' \2B9C';
-}
-
-.forward-button::after {
-	content: ' \2B9E';
-}
-
 /* Generic Container End */
 
 
