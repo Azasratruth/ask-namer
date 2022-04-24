@@ -1,13 +1,13 @@
 .blog-back-btn {
-  display: block;
-  position: absolute;
-  left: 15px;
+	display: block;
+	position: absolute;
+	left: 20px;
 }
 
 .blg-bk-btn-tp {
-  top: 50px;
+	top: 75px;
 }
 
 .blg-bk-btn-btm {
-  bottom: 50px;
+	bottom: 50px;
 }
