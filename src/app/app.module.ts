@@ -54,6 +54,7 @@ import { ICantAffordANamingAgencyAndWantANameQuicklyComponent } from './view/blo
 import { FaqComponent } from './view/faq/faq.component';
 import { FaqLandingComponent } from './view/faq-landing/faq-landing.component';
 import { NameEvaluationsComponent } from './view/name-evaluations/name-evaluations.component';
+import { TrustedByComponent } from './view/trusted-by/trusted-by.component';
 
 const appRoutes: Routes = [
 	{ path: '', component: LandingComponent },
@@ -123,6 +124,7 @@ const appRoutes: Routes = [
 		FaqComponent,
 		FaqLandingComponent,
 		NameEvaluationsComponent,
+  TrustedByComponent,
 	],
 	imports: [
 		BrowserModule.withServerTransition({ appId: 'serverApp' }),
