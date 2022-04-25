@@ -5,9 +5,28 @@
 }
 
 .blg-bk-btn-tp {
-	top: 75px;
+	top: 90px;
 }
 
 .blg-bk-btn-btm {
-	bottom: 50px;
+	bottom: 60px;
+}
+
+img {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+	width: 11px;
+	height: auto;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.bot {
+	margin-bottom: 3px;
+}
+
+@media (min-width: 768px) {
+	.lg {
+		display: none;
+	}
 }
