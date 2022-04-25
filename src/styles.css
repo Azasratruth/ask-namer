@@ -154,6 +154,16 @@ body {
 	font-size: 1rem;
 }
 
+.symbol-lh {
+	margin-bottom: 3px;
+	margin-right: 2px;
+}
+
+.invert {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
+
 /* Generic Container End */
 
 

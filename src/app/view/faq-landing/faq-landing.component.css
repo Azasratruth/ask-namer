@@ -21,6 +21,11 @@ h5 {
 	font-weight: 100;
 }
 
+.invert {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
 /* For large screens */
 @media (min-width: 768px) {
 	.flex {
