@@ -1,143 +1,141 @@
 .generic-cont {
-  background-color: rgba(6, 6, 8, 0.9);
+	background-color: rgba(6, 6, 8, 0.9);
 }
 
 .names-head,
 .names-body {
-  display: flex;
+	display: flex;
 
-  justify-content: center;
-  align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 
 .names-head {
-  flex-direction: column;
+	flex-direction: column;
 }
 
 .names-body {
-  flex-direction: row;
-  flex-wrap: wrap;
+	flex-direction: row;
+	flex-wrap: wrap;
 
-  align-content: space-around;
+	align-content: space-around;
 }
 
 .body-shortened {
-  font-size: 1.3rem;
-  letter-spacing: 2.3;
+	font-size: 1.3rem;
+	letter-spacing: 2.3;
 }
 
 .w-to-r-text {
-  padding-right: 9px;
+	padding-right: 9px;
 }
 
 .und-line-fix {
-  display: inline-flex;
+	display: inline-flex;
 }
 
 /* CSS FLIP */
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-  position: relative;
+	position: relative;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-  width: 17rem;
-  height: 16rem;
-  margin: 2.5rem;
+	width: 17rem;
+	height: 16rem;
+	margin: 2.5rem;
 
-  border-radius: 100px 0 100px 0;
+	border-radius: 100px 0 100px 0;
 
-  /* Remove this if you don't want the 3D effect */
-  perspective: 1000px;
+	/* Remove this if you don't want the 3D effect */
+	perspective: 1000px;
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
+	position: relative;
+	width: 100%;
+	height: 100%;
 
-  /* border: 2px solid var(--always-moving-block-black); */
-  border: #f0f0f0 2px inset;
-  border-radius: inherit;
+	/* border: 2px solid var(--always-moving-block-black); */
+	border: #f0f0f0 2px inset;
+	border-radius: inherit;
 
-  transition: transform 1s;
-  transform-style: preserve-3d;
+	transition: transform 1s;
+	transform-style: preserve-3d;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 /* Position the front and back side */
 .flip-card-front,
 .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 
-  -webkit-backface-visibility: hidden;
-  /* Safari */
-  backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	/* Safari */
+	backface-visibility: hidden;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  border-radius: inherit;
-  z-index: 1;
+	border-radius: inherit;
+	z-index: 1;
 }
 
 /* Style the back side */
 .flip-card-back {
-  border-radius: 0 100px 0 100px;
-  transform: rotateY(180deg);
-  z-index: 3;
+	border-radius: 0 100px 0 100px;
+	transform: rotateY(180deg);
+	z-index: 3;
 }
 
 .flip-title,
 .flip-quality {
-  margin: 15px;
+	margin: 15px;
 }
 
 .flip-subtitle,
 .flip-body {
-  margin: 5px 15px;
+	margin: 5px 15px;
 }
 
 .flip-title {
-  font-size: 1.85rem;
+	font-size: 1.85rem;
 }
 
 .flip-quality {
-  font-size: 1.3rem;
+	font-size: 1.3rem;
 }
 
 .flip-subtitle {
-  font-size: 1.4rem;
+	font-size: 1.4rem;
 }
 
 .flip-body {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 /* Z-Index to hide the hr when flipped */
 .flip-hr-front,
 .flip-hr-back {
-  width: 80%;
-  /* color: #000; */
-  color: #f0f0f0;
-  /* border-width: 4px; */
-  border-width: 1px;
-  z-index: 2;
+	width: 80%;
+	color: #f0f0f0;
+	border-width: 1px;
+	z-index: 2;
 }
 
 /* FLIP End */
