@@ -18,7 +18,7 @@ export class AboutMeComponent implements OnInit {
   ) {
     this.titleService.setTitle('About Us | Ask Namer');
     this.metaTagService.addTags([
-      { name: 'description', content: 'Ask Namer is a solo endeavor. My cause is to help people, who are doing something positive, get recognized by their name. Majority of my clientele has been startups.' },
+      { name: 'description', content: 'Our Vision is to help startups that are making a positive impact, get recognized by their name.' },
     ]);
   }
 
